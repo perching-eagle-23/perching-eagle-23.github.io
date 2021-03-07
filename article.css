@@ -1,0 +1,95 @@
+/* Usually browser supported */
+/* @font-face { */
+/* font-family: $eqn_font;  */
+/* src: url("fonts/ams-euler.ttf"); */
+/* } */
+/* @font-face { */
+/* font-family: $mono_font;  */
+/* src: url("fonts/cartograph_cf/cartograph-mono-cf-bold.otf"); */
+/* } */
+@font-face {
+  font-family: "Gentium";
+  src: url("fonts/genbasb.ttf");
+}
+@font-face {
+  font-family: "Computer Modern Bright";
+  /* multiple formats for browser compatibility */
+  src: url("fonts/cmbright/cmunbmr.woff") format("woff"), url("fonts/cmbright/cmunbmr.eot") format("eot"), url("fonts/cmbright/cmunbmr.ttf") format("ttf");
+}
+body {
+  /* font-family: "amsEuler", "Helvetica Neue","Segoe UI",Arial,sans-serif; */
+  font-family: "Computer Modern Bright", sans-serif;
+  font-size: 1.1em;
+  /* background:$back_grey;  */
+}
+
+h1 {
+  font-family: "Gentium", sans-serif;
+  color: #303633;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+h2 {
+  font-family: "Gentium";
+  font-size: 1.2em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+.subsection {
+  /* padding:0 16px 0 0;  */
+  background-image: url("icons/up_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  vertical-align: middle;
+}
+
+.midsection {
+  width: 60%;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  padding: 23px;
+  padding-top: 8px;
+  /* box-shadow: 0px 2px 5px 0px #999272; */
+}
+
+/* Reduce the margins for mobile */
+@media only screen and (max-width: 1000px) {
+  .midsection {
+    width: 90%;
+  }
+}
+.midsection > p {
+  /* text-indent: 5px;  */
+  line-height: 1.3em;
+}
+
+.definition {
+  color: black;
+  display: block;
+  box-shadow: 0px 1px 2px 0px #F09D51;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+ul.definition {
+  list-style-type: none;
+}
+
+/* Equations might be standalone spans, or, if the entire definition or header or etc. is Tex, it might be appplied as a multiple class (as in : <span class="definition eqn">2D : \( d^2 := x^2 + y^2 \)</span> ).  Be wary of this overlap when applying eqn specific styles. */
+.eqn {
+  /* color: #512500; */
+}
+
+.svg_wrapper {
+  border: 2px solid green;
+  width: 100%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=article.css.map */

@@ -16,11 +16,11 @@ function collapseSection() {
    if (section.style.display == 'none') {
       // Gives elements back their default display, ie, shows the section
       section.style.display = ''; 
-      this.style.backgroundImage = "url('icons/up_arrow.svg')"; 
+      this.style.backgroundImage = "url('../styles/icons/up_arrow.svg')"; 
    } else {
       // Hides the section
       section.style.display = 'none'; 
-      this.style.backgroundImage = "url('icons/down_arrow.svg')"; 
+      this.style.backgroundImage = "url('styles/icons/down_arrow.svg')"; 
    }
 }
 

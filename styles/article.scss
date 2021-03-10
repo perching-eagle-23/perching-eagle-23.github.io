@@ -10,17 +10,6 @@ $eqn_font: "AMS Euler Open Source";
 $mono_font: "Cartograph cf"; 
 $sassy_font: "Gentium"; 
 
-/* @font-face { */
-   /* font-family: $eqn_font;  */
-   /* src: url("fonts/ams-euler.ttf"); */
-/* } */
-
-/* @font-face { */
-   /* font-family: $mono_font;  */
-   /* src: url("fonts/cartograph_cf/cartograph-mono-cf-bold.otf"); */
-/* } */
-
-
 @font-face {
    font-family: $sassy_font; 
    src: url("fonts/genbasb.ttf"); 
@@ -35,10 +24,8 @@ $sassy_font: "Gentium";
 }
 
 body {
-   /* font-family: "amsEuler", "Helvetica Neue","Segoe UI",Arial,sans-serif; */
    font-family: $body_font1, sans-serif;
    font-size: 1.1em;
-   /* background:$back_grey;  */
 }
 
 h1 {
@@ -50,15 +37,15 @@ h1 {
 }
 
 h2 {
-   font-family: $sassy_font; 
-   font-size: 1.2em;
+   font-family: $sassy_font, sans-serif; 
+   font-size: 1.2rem;
    margin-top: 0.6em;
    margin-bottom: 0.6em;
 }
 
 .subsection {
    /* padding:0 16px 0 0;  */
-   background-image: url('icons/up_arrow.svg'); 
+   background-image: url('../styles/icons/up_arrow.svg'); 
    background-repeat: no-repeat;
    background-position: right;
    vertical-align: middle;

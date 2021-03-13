@@ -5,8 +5,7 @@ window.onload = function(){
    drawGreatCircles(); 
    drawSlider();
    // byId("globe").onclick = drawGreatCircles;
-   d3.selectAll(".subsection")
-      .on("click", collapseSection); 
+   attachNavHandlers();
 }; 
 
 function drawBlankMap() {

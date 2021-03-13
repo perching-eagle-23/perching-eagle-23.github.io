@@ -9,21 +9,6 @@ window.onload = function(){
       .on("click", collapseSection); 
 }; 
 
-function collapseSection() {
-   // The page convention is to give a div the id 'subNcontent' if it follows the h2 with id 'subN'
-   // This achieves section hierachy and hiding without hiding the header. 
-   var section = byId(this.id + "content")
-   if (section.style.display == 'none') {
-      // Gives elements back their default display, ie, shows the section
-      section.style.display = ''; 
-      this.style.backgroundImage = "url('../styles/icons/up_arrow.svg')"; 
-   } else {
-      // Hides the section
-      section.style.display = 'none'; 
-      this.style.backgroundImage = "url('styles/icons/down_arrow.svg')"; 
-   }
-}
-
 function drawBlankMap() {
    // The svg
    var svg = d3.select("svg"),

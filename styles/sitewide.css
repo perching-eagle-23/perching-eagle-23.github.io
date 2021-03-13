@@ -61,29 +61,4 @@ h2 {
   line-height: 1.3em;
 }
 
-.definition {
-  color: black;
-  display: block;
-  box-shadow: 0px 1px 2px 0px #F09D51;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-ul.definition {
-  list-style-type: none;
-}
-
-/* Equations might be standalone spans, or, if the entire definition or header or etc. is Tex, it might be appplied as a multiple class (as in : <span class="definition eqn">2D : \( d^2 := x^2 + y^2 \)</span> ).  Be wary of this overlap when applying eqn specific styles. */
-.eqn {
-  /* color: #512500; */
-}
-
-.svg_wrapper {
-  border: 2px solid green;
-  width: 100%;
-  text-align: center;
-}
-
-/*# sourceMappingURL=article.css.map */
+/*# sourceMappingURL=sitewide.css.map */

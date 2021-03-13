@@ -1,0 +1,13 @@
+/* Colors */
+/* Fonts */
+@font-face {
+  font-family: "Gentium";
+  src: url("fonts/genbasb.ttf");
+}
+@font-face {
+  font-family: "Computer Modern Bright";
+  /* multiple formats for browser compatibility */
+  src: url("fonts/cmbright/cmunbmr.woff") format("woff"), url("fonts/cmbright/cmunbmr.eot") format("eot"), url("fonts/cmbright/cmunbmr.ttf") format("ttf");
+}
+
+/*# sourceMappingURL=variables.css.map */

@@ -1,0 +1,25 @@
+/* Colors */
+
+$back_grey: #f8f8f8;
+$back_tan: #F8F4E3;
+$text: #303633; 
+$text_highlight_1: #363946; 
+$definition_highlight: #F09D51;
+
+/* Fonts */
+
+$body_font: "Computer Modern Bright"; 
+$title_font: "Gentium";
+
+@font-face {
+   font-family: $title_font; 
+   src: url("fonts/genbasb.ttf"); 
+}
+
+@font-face {
+   font-family: $body_font; 
+   /* multiple formats for browser compatibility */
+   src: url("fonts/cmbright/cmunbmr.woff") format('woff'), 
+      url("fonts/cmbright/cmunbmr.eot") format('eot'),
+      url("fonts/cmbright/cmunbmr.ttf") format('ttf'); 
+}

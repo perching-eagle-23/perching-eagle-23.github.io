@@ -1,0 +1,56 @@
+@use 'variables';
+
+body {
+   font-family: variables.$body_font, sans-serif;
+   font-size: 1.1em;
+}
+
+h1 {
+   font-family: variables.$title_font, sans-serif; 
+   color: variables.$text; 
+   text-align: center; 
+   margin-bottom: 50px; 
+   margin-top: 40px; 
+}
+
+h2 {
+   font-family: variables.$title_font, sans-serif; 
+   font-size: 1.2rem;
+   margin-top: 0.6em;
+   margin-bottom: 0.6em;
+}
+
+/* Collapsible sections */
+
+.subsection {
+   background-image: url('icons/up_arrow.svg'); 
+   background-repeat: no-repeat;
+   background-position: right;
+   vertical-align: middle;
+}
+
+.subsection--collapsed {
+   background-image: url('icons/down_arrow.svg');
+}
+
+/* The center "ribbon" of content */
+
+.midsection {
+   width: 60%; 
+   margin: auto;
+   background: white; 
+   border-radius: 10px; 
+   padding: 23px; 
+   padding-top: 8px;
+}
+
+/* Reduce the margins for mobile */
+@media only screen and (max-width: 1000px) {
+   .midsection {
+      width: 90%;
+   }
+}
+
+.midsection > p {
+   line-height: 1.3em; 
+}

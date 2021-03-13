@@ -1,82 +1,10 @@
-$back_grey: #f8f8f8;
-$back_tan: #F8F4E3;
-$text: #303633; 
-$text_highlight_1: #363946; 
-$def_back: #F09D51;
-/* Usually browser supported */
-$alt_font: "Bookman Old Style"; 
-$body_font1: "Computer Modern Bright"; 
-$eqn_font: "AMS Euler Open Source"; 
-$mono_font: "Cartograph cf"; 
-$sassy_font: "Gentium"; 
-
-@font-face {
-   font-family: $sassy_font; 
-   src: url("fonts/genbasb.ttf"); 
-}
-
-@font-face {
-   font-family: $body_font1; 
-   /* multiple formats for browser compatibility */
-   src: url("fonts/cmbright/cmunbmr.woff") format('woff'), 
-      url("fonts/cmbright/cmunbmr.eot") format('eot'),
-      url("fonts/cmbright/cmunbmr.ttf") format('ttf'); 
-}
-
-body {
-   font-family: $body_font1, sans-serif;
-   font-size: 1.1em;
-}
-
-h1 {
-   font-family: $sassy_font, sans-serif; 
-   color: $text; 
-   text-align: center; 
-   margin-bottom: 50px; 
-   margin-top: 40px; 
-}
-
-h2 {
-   font-family: $sassy_font, sans-serif; 
-   font-size: 1.2rem;
-   margin-top: 0.6em;
-   margin-bottom: 0.6em;
-}
-
-.subsection {
-   /* padding:0 16px 0 0;  */
-   background-image: url('../styles/icons/up_arrow.svg'); 
-   background-repeat: no-repeat;
-   background-position: right;
-   vertical-align: middle;
-}
-
-.midsection {
-   width: 60%; 
-   margin: auto;
-   background: white; 
-   border-radius: 10px; 
-   padding: 23px; 
-   padding-top: 8px; 
-   /* box-shadow: 0px 2px 5px 0px #999272; */
-}
-
-/* Reduce the margins for mobile */
-@media only screen and (max-width: 1000px) {
-   .midsection {
-      width: 90%;
-   }
-}
-
-.midsection > p {
-   /* text-indent: 5px;  */
-   line-height: 1.3em; 
-}
+@use 'variables';
+@use 'sitewide';
 
 .definition {
    color: black;    
    display: block;
-   box-shadow: 0px 1px 2px 0px $def_back;
+   box-shadow: 0px 1px 2px 0px variables.$definition_highlight;
    padding: 10px;
    border-radius: 5px; 
    margin-top: 8px; 

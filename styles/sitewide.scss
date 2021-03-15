@@ -11,8 +11,8 @@ h1 {
    font-family: variables.$title_font, sans-serif; 
    color: variables.$text; 
    text-align: center; 
-   margin-bottom: 50px; 
-   margin-top: 40px; 
+   margin-bottom: 20px; 
+   margin-top: 20px; 
 }
 
 h2 {
@@ -40,7 +40,7 @@ h2 {
 .midsection {
    width: 60%; 
    margin: auto;
-   background: white; 
+   background: variables.$background; 
    border-radius: 10px; 
    padding: 23px; 
    padding-top: 8px;

@@ -1,5 +1,23 @@
-/* Colors */
-/* Fonts */
+/* COLORS */
+/* Do not use these variables in other files.  Use them as values for the theme variables below. */
+/* Reference only these variables in other files; test themes by changing their assignments here. */
+/* main theme */
+/* (bad) dark theme */
+/* $rich_black: #0c090dff; */
+/* $ua_red: #e01a4fff; */
+/* $fire_opal: #f15946ff; */
+/* $orange_yellow: #f9c22eff; */
+/* $maximum_blue: #53b3cbff; */
+/* $background: $rich-black; */
+/* $background_2: $greenish_black;  */
+/* $background_highlight_1: $ua_red; */
+/* $text: $maximum_blue; */
+/* $text_highlight_1: $orange_yellow;  */
+/* $definition_highlight: $fire_opal;  */
+/* $sidebar_text: $fire_opal;  */
+/* $sidebar_background: $rich_black;  */
+/* $sidebar_text_hover: $maximum_blue;  */
+/* FONTS */
 @font-face {
   font-family: "Gentium";
   src: url("fonts/genbasb.ttf");
@@ -20,8 +38,8 @@ h1 {
   font-family: "Gentium", sans-serif;
   color: #303633;
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 h2 {
@@ -67,7 +85,6 @@ h2 {
 .header {
   text-align: center;
   color: #363946;
-  height: 4rem;
   background-color: #52FFEE;
   padding: 0px;
   margin: 0px;
@@ -75,6 +92,7 @@ h2 {
 
 .header a {
   color: #363946;
+  text-decoration: none;
 }
 
 .header__navicon {
@@ -89,10 +107,16 @@ h2 {
   vertical-align: middle;
 }
 
+.pagetitle {
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+}
+
 @media only screen and (max-width: 1000px) {
   .header__navicon {
-    width: 100%;
-    padding-bottom: 30px;
+    position: static;
   }
 }
 /* Sidenav */
@@ -130,8 +154,12 @@ h2 {
   margin-left: 50px;
 }
 
+html {
+  color: #303633;
+}
+
 .definition {
-  color: black;
+  color: #303633;
   display: block;
   box-shadow: 0px 1px 2px 0px #F09D51;
   padding: 10px;
@@ -146,11 +174,12 @@ ul.definition {
 
 /* Equations might be standalone spans, or, if the entire definition or header or etc. is Tex, it might be appplied as a multiple class (as in : <span class="definition eqn">2D : \( d^2 := x^2 + y^2 \)</span> ).  Be wary of this overlap when applying eqn specific styles. */
 .eqn {
-  /* color: #512500; */
+  color: #363946;
 }
 
 .svg_wrapper {
-  border: 2px solid green;
+  /* border: 2px solid green; */
+  border: 2px solid #F09D51;
   width: 100%;
   text-align: center;
 }

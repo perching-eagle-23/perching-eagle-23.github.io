@@ -1,13 +1,55 @@
-/* Colors */
+/* COLORS */
 
-$back_grey: #f8f8f8;
-$back_tan: #F8F4E3;
-$back_cyan: #52FFEE; 
-$text: #303633; 
-$text_highlight_1: #363946; 
-$definition_highlight: #F09D51;
+/* Do not use these variables in other files.  Use them as values for the theme variables below. */
 
-/* Fonts */
+$grey: #f8f8f8;
+$tan: #F8F4E3;
+$cyan: #52FFEE; 
+$greenish_black: #303633; 
+$blue_1: #363946; 
+$gold_1: #F09D51;
+$black: #111; 
+$light_grey: #818181; 
+$lighter_grey: #f1f1f1; 
+
+$maximum-green: #548c2fff;
+
+/* Reference only these variables in other files; test themes by changing their assignments here. */
+
+/* main theme */
+$background: white;
+$background_2: $tan; 
+$background_highlight_1: $cyan;
+$text: $greenish_black;
+$text_highlight_1: $blue_1; 
+$definition_highlight: $gold_1; 
+
+$sidebar_text: $light_grey; 
+$sidebar_background: $black; 
+$sidebar_text_hover: $lighter_grey; 
+
+/* (bad) dark theme */
+
+/* $rich_black: #0c090dff; */
+/* $ua_red: #e01a4fff; */
+/* $fire_opal: #f15946ff; */
+/* $orange_yellow: #f9c22eff; */
+/* $maximum_blue: #53b3cbff; */
+
+
+/* $background: $rich-black; */
+/* $background_2: $greenish_black;  */
+/* $background_highlight_1: $ua_red; */
+/* $text: $maximum_blue; */
+/* $text_highlight_1: $orange_yellow;  */
+/* $definition_highlight: $fire_opal;  */
+
+/* $sidebar_text: $fire_opal;  */
+/* $sidebar_background: $rich_black;  */
+/* $sidebar_text_hover: $maximum_blue;  */
+
+
+/* FONTS */
 
 $body_font: "Computer Modern Bright"; 
 $title_font: "Gentium";

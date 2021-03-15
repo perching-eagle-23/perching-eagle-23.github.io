@@ -1,5 +1,23 @@
-/* Colors */
-/* Fonts */
+/* COLORS */
+/* Do not use these variables in other files.  Use them as values for the theme variables below. */
+/* Reference only these variables in other files; test themes by changing their assignments here. */
+/* main theme */
+/* (bad) dark theme */
+/* $rich_black: #0c090dff; */
+/* $ua_red: #e01a4fff; */
+/* $fire_opal: #f15946ff; */
+/* $orange_yellow: #f9c22eff; */
+/* $maximum_blue: #53b3cbff; */
+/* $background: $rich-black; */
+/* $background_2: $greenish_black;  */
+/* $background_highlight_1: $ua_red; */
+/* $text: $maximum_blue; */
+/* $text_highlight_1: $orange_yellow;  */
+/* $definition_highlight: $fire_opal;  */
+/* $sidebar_text: $fire_opal;  */
+/* $sidebar_background: $rich_black;  */
+/* $sidebar_text_hover: $maximum_blue;  */
+/* FONTS */
 @font-face {
   font-family: "Gentium";
   src: url("fonts/genbasb.ttf");
@@ -13,7 +31,6 @@
 .header {
   text-align: center;
   color: #363946;
-  height: 4rem;
   background-color: #52FFEE;
   padding: 0px;
   margin: 0px;
@@ -21,6 +38,7 @@
 
 .header a {
   color: #363946;
+  text-decoration: none;
 }
 
 .header__navicon {
@@ -35,10 +53,16 @@
   vertical-align: middle;
 }
 
+.pagetitle {
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+}
+
 @media only screen and (max-width: 1000px) {
   .header__navicon {
-    width: 100%;
-    padding-bottom: 30px;
+    position: static;
   }
 }
 /* Sidenav */

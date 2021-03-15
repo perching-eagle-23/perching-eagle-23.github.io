@@ -4,12 +4,8 @@
    <meta charset="UTF-8">
    <title>Triangles</title>
    <link href="../styles/article.css" rel="stylesheet" type="text/css" />
-   
-   <!-- Note that this error occurs in Edge but not Chrome and will need to be dealt with:  -->
-   <!-- triangles.html:1 Refused to load the script 'https://d3js.org/d3.v4.js' because it violates the following Content Security Policy directive: "script-src 'none'". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. -->
-   <!-- This resource : https://stackoverflow.com/questions/31211359/refused-to-load-the-script-because-it-violates-the-following-content-security-po -->
-   <!-- Suggests the following solution, which does not work:     -->
-   <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" /> -->
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src * https://d3js.org/d3.v4.js https://unpkg.com/d3-simple-slider https://polyfill.io/v3/polyfill.min.js?features=es6 https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js ; script-src * 'unsafe-inline' 'unsafe-eval'"> -->
+      <meta http-equiv="Content-Security-Policy" content="default-src *;script-src * 'unsafe-inline' 'unsafe-eval'">
 
    <!-- Load d3.js -->
    <script src="https://d3js.org/d3.v4.js"></script>
@@ -28,7 +24,10 @@
 <body>
    <div class="header">
       <div class="header__navicon"></div>
-      <h1><a href="../tests.html">Room 202 Math /</a><a href="">Articles</a></h1>
+      <h1 class="pagetitle">
+         <a href="../tests.html">Room 202 Math</a>
+         <a href=""> / Articles</a>
+      </h1>
    </div>
    
    <div id="mySidenav" class="sidenav">

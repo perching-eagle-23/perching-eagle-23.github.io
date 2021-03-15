@@ -2,6 +2,7 @@
    //Mostly working
    
    window.onload = function() {
+      attachNavHandlers();
       // Original using json
       //var data = d3.json("treedata.json").then(function(data) {
       /* DSV SPECIFIC */

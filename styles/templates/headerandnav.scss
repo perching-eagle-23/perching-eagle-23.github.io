@@ -4,15 +4,15 @@
 
 .header {
    text-align: center;
-   color: variables.$text_highlight_1; 
-   height: 4rem;
-   background-color: variables.$back_cyan; 
+   color: variables.$text_highlight_1;
+   background-color: variables.$background_highlight_1; 
    padding: 0px; 
    margin: 0px; 
 }
 
 .header a {
    color: variables.$text_highlight_1; 
+   text-decoration: none;
 }
 
 .header__navicon {
@@ -27,10 +27,16 @@
    vertical-align: middle;
 }
 
+.pagetitle {
+   margin-top: 0px; 
+   padding-top: 20px;
+   padding-bottom: 20px; 
+   font-size: 2.5rem;
+}
+
 @media only screen and (max-width: 1000px) {
    .header__navicon{
-      width: 100%;
-      padding-bottom: 30px; 
+      position: static;
    }
 }
 
@@ -43,7 +49,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: variables.$sidebar_background;
   overflow-x: hidden;
   transition: 0.1s;
   padding-top: 60px;
@@ -53,13 +59,13 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: variables.$sidebar_text; 
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: variables.$sidebar_text_hover;
 }
 
 .sidenav .closebtn {

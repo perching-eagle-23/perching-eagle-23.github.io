@@ -48,10 +48,11 @@
 
          // Original
          //const svg = d3.create("svg")
-         const svg = d3.select("body").append("svg")
+         const svg = d3.select(".mainwrapper").append("svg")
             .attr("viewBox", [-1 * margin.left, -1 * margin.top, width, dx])
             .style("font", "10px sans-serif")
             .style("user-select", "none")
+            .classed("fullwidth", true)
             // .style("background-color", "steelblue");
       
 

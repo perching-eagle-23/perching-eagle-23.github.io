@@ -32,3 +32,5 @@ function closeNav() {
    document.getElementById("mySidenav").style.width = "0";
    console.log("closeNav"); 
 }
+
+function byId(id) { return document.getElementById(id); }

@@ -34,3 +34,6 @@ function closeNav() {
 }
 
 function byId(id) { return document.getElementById(id); }
+
+// Testing for script load order, defer, async stuff.  
+// byId("mySidenav").addEventListener("mouseover", function() {this.style.background = "red"});  

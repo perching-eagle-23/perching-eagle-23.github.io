@@ -12,4 +12,5 @@
    <a href="../index.html">Home</a>
    <a href="articles/triangles.html">Articles</a>
    <a href="assignments/quadratic_eqns_1.html">Assignments</a>
+   <a href="references/references.php">Assignments</a>
 </div>

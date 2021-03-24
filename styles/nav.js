@@ -1,3 +1,11 @@
+// If several scripts are attached, only the last to be attached will run window.onload.  
+// Thus, if this is the only script attached, navhandlers will be attached here.  
+// Else, attachNavHandlers must be run in the window.onload clause of the last loaded script.
+window.onload = function(){
+   attachNavHandlers();
+}; 
+
+
 function attachNavHandlers() {
    d3.selectAll(".subsection")
       .on("click", collapseSection);

@@ -4,8 +4,6 @@
    <meta charset="UTF-8">
    <title>References</title>
    <link href="../styles/article.css" rel="stylesheet" type="text/css" />
-   <!-- <meta http-equiv="Content-Security-Policy" content="default-src * https://d3js.org/d3.v4.js https://unpkg.com/d3-simple-slider https://polyfill.io/v3/polyfill.min.js?features=es6 https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js ; script-src * 'unsafe-inline' 'unsafe-eval'"> -->
-      <meta http-equiv="Content-Security-Policy" content="default-src *;script-src * 'unsafe-inline' 'unsafe-eval'">
 
    <!-- Load d3.js -->
    <script src="https://d3js.org/d3.v6.js"></script>
@@ -16,8 +14,10 @@
    <script defer src="triangles.js" type="text/javascript"></script>
 </head>
 <body>
-   <?php $pagetitle = 'References' ?>
-   <?php include("../styles/templates/headerandnav.php"); ?>
+   <?php 
+      $pagetitle = 'References'; 
+      include("../templates/headerandnav.php"); 
+   ?>
    
    <div class="ouptut">
       <?php

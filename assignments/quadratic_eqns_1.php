@@ -31,7 +31,7 @@
    </div> -->
    <?php 
       $pagetitle = 'Quadratic Equations 1'; 
-      include("../../templates/headerandnav.php"); 
+      include("../templates/headerandnav.php"); 
    ?>
 
 

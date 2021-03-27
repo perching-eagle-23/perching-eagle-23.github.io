@@ -1,7 +1,13 @@
 /* COLORS */
 /* Do not use these variables in other files.  Use them as values for the theme variables below. */
+/* alternate greys */
 /* Reference only these variables in other files; test themes by changing their assignments here. */
 /* main theme */
+/* original sidebar greys */
+/* $sidebar_text: $light_grey;  */
+/* $sidebar_background: $black;  */
+/* $sidebar_text_hover: $lighter_grey;  */
+/* alternate greys */
 /* (bad) dark theme */
 /* $rich_black: #0c090dff; */
 /* $ua_red: #e01a4fff; */

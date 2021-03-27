@@ -12,6 +12,11 @@ $black: #111;
 $light_grey: #818181; 
 $lighter_grey: #f1f1f1; 
 
+/* alternate greys */
+$alt_dark_grey: #445760; 
+$alt_light_grey: #50626a;
+$alt_white: #e7f5f5;
+
 $maximum-green: #548c2fff;
 
 /* Reference only these variables in other files; test themes by changing their assignments here. */
@@ -24,9 +29,16 @@ $text: $greenish_black;
 $text_highlight_1: $blue_1; 
 $definition_highlight: $gold_1; 
 
-$sidebar_text: $light_grey; 
-$sidebar_background: $black; 
-$sidebar_text_hover: $lighter_grey; 
+/* original sidebar greys */
+/* $sidebar_text: $light_grey;  */
+/* $sidebar_background: $black;  */
+/* $sidebar_text_hover: $lighter_grey;  */
+
+/* alternate greys */
+$sidebar_text: $alt_white; 
+$sidebar_background: $alt_dark_grey; 
+$sidebar_text_hover: $gold_1; 
+
 
 /* (bad) dark theme */
 

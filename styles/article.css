@@ -1,7 +1,13 @@
 /* COLORS */
 /* Do not use these variables in other files.  Use them as values for the theme variables below. */
+/* alternate greys */
 /* Reference only these variables in other files; test themes by changing their assignments here. */
 /* main theme */
+/* original sidebar greys */
+/* $sidebar_text: $light_grey;  */
+/* $sidebar_background: $black;  */
+/* $sidebar_text_hover: $lighter_grey;  */
+/* alternate greys */
 /* (bad) dark theme */
 /* $rich_black: #0c090dff; */
 /* $ua_red: #e01a4fff; */
@@ -127,7 +133,7 @@ h2 {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #445760;
   overflow-x: hidden;
   transition: 0.1s;
   padding-top: 60px;
@@ -137,13 +143,13 @@ h2 {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #e7f5f5;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #F09D51;
 }
 
 .sidenav .closebtn {

@@ -3,8 +3,10 @@
 <head>
    <meta charset="UTF-8">
    <title>Room 202 Math</title>
-   <link href="styles/article.css" rel="stylesheet" type="text/css" />
+   <link href="styles/all.css" rel="stylesheet" type="text/css" />
+   <!--
    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+   -->
    <!-- Load d3.js -->
    <script src="https://d3js.org/d3.v6.js"></script> 
    
@@ -20,7 +22,7 @@
    <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn">&times;</a>
       <a href="../index.html">Home</a>
-      <a href="articles/triangles.html">Articles</a>
+      <a href="topics/triangles.html">Topics</a>
       <a href="assignments/quadratic_eqns_1.html">Assignments</a>
    </div> -->
    

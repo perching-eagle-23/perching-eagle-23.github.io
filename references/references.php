@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <title>References</title>
-   <link href="../styles/article.css" rel="stylesheet" type="text/css" />
+   <link href="../styles/all.css" rel="stylesheet" type="text/css" />
 
    <!-- Load d3.js -->
    <script src="https://d3js.org/d3.v6.js"></script>

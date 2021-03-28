@@ -1,6 +1,7 @@
-@use 'variables';
-@use 'sitewide';
-@use 'templatestyles/headerandnav';
+@use 'sitewide/variables';
+@use 'sitewide/sitewide';
+@use 'sitewide/headerandnav';
+@use 'templatestyles/mainpage';
 
 html {
    color: variables.$text; 

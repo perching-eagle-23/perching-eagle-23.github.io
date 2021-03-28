@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <title>Triangles</title>
-   <link href="../styles/article.css" rel="stylesheet" type="text/css" />
+   <link href="../styles/all.css" rel="stylesheet" type="text/css" />
 
    <!-- Load d3.js -->
    <script src="https://d3js.org/d3.v4.js"></script>
@@ -24,19 +24,19 @@
       <div class="header__navicon"></div>
       <h1 class="pagetitle">
          <a href="../index.html">Room 202 Math</a>
-         <a href=""> / Articles</a>
+         <a href=""> / Topics</a>
       </h1>
    </div>
    
    <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn">&times;</a>
       <a href="../index.html">Home</a>
-      <a href="#">Articles</a>
+      <a href="#">Topics</a>
       <a href="#">Assignments</a>
    </div> -->
  <?php 
-      $pagetitle = 'Articles / Triangles'; 
-      include("../../templates/headerandnav.php"); 
+      $pagetitle = 'Topics / Triangles'; 
+      include("../templates/headerandnav.php"); 
    ?>
    
 

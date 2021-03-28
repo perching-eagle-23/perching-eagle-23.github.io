@@ -16,7 +16,7 @@ USE mathsite;
    PRIMARY KEY (id)
 );  */
 
-LOAD DATA LOCAL INFILE "C:/xampp/htdocs/learn/persistence/math/site philosophy and unfinished articles/references.txt" INTO TABLE reference 
+LOAD DATA LOCAL INFILE "C:/xampp/htdocs/learn/persistence/math/site philosophy and unfinished topics/references.txt" INTO TABLE reference 
    FIELDS TERMINATED BY '::'
    LINES TERMINATED BY '\n'
    IGNORE 1 LINES;

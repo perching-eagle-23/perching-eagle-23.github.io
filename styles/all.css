@@ -160,6 +160,28 @@ h2 {
   margin-left: 50px;
 }
 
+/* @use 'variables'; */
+/* @use 'sitewide'; */
+.mainwrapper {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+.subwrapper {
+  grid-column: 1/4;
+}
+
+@media only screen and (min-width: 1000px) {
+  .subwrapper {
+    grid-column: 2/3;
+  }
+}
+.fullwidth {
+  grid-column: 1/4;
+}
+
 html {
   color: #303633;
 }
@@ -190,4 +212,4 @@ ul.definition {
   text-align: center;
 }
 
-/*# sourceMappingURL=article.css.map */
+/*# sourceMappingURL=all.css.map */

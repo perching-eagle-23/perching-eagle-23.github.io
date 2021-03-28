@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <title>Triangles</title>
-   <link href="../styles/article.css" rel="stylesheet" type="text/css" />
+   <link href="../styles/all.css" rel="stylesheet" type="text/css" />
    
 
    <!-- Load d3.js -->
@@ -26,7 +26,7 @@
    <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn">&times;</a>
       <a href="../index.html">Home</a>
-      <a href="#">Articles</a>
+      <a href="#">Topics</a>
       <a href="#">Assignments</a>
    </div> -->
    <?php 

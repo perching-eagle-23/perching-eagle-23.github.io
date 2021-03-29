@@ -8,7 +8,8 @@
    <script src='https://d3js.org/d3.v6.js'></script>
    <!-- Navbar functionality -->
    <script defer src="http://localhost/learn/persistence/math/main/styles/nav.js" type="text/javascript"></script>
-   <?php 
+   <?php
+      // Include page specific scripts. 
       if (isset($pagescripts)) {
          print($pagescripts); 
       }
@@ -18,7 +19,7 @@
    <div class="header">
       <div class="header__navicon"></div>
       <h1 class="pagetitle">
-         <a href="/">
+         <a href="http://localhost/learn/persistence/math/main">
             <?= $pagetitle ?>
          </a>
       </h1>
@@ -29,4 +30,5 @@
       <a href="http://localhost/learn/persistence/math/main">Home</a>
       <a href="http://localhost/learn/persistence/math/main/assignments">Assignments</a>
       <a href="http://localhost/learn/persistence/math/main/topics">Topics</a>
+      <a href="http://localhost/learn/persistence/math/main/resources/resources.php">Resources</a>
    </nav>

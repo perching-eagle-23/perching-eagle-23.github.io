@@ -4,9 +4,9 @@
 ?>
 <div class="mainwrapper">
    <div class="subwrapper">
-      <a href="./triangles/triangles.php" class="definition">Why Triangles?</a>
-      <a href="./symmetry" class="definition">Topic 2</a>
-      <a href="./topics/topic1" class="definition">Topic 3</a>
+      <a href="./triangles/triangles.php" class="definition listitem">Why Triangles?</a>
+      <a href="./symmetry" class="definition listitem">Applications of Symmetry</a>
+      <a href="./topics/topic1" class="definition listitem">Topic 3</a>
    </div>
 </div>
 </body>

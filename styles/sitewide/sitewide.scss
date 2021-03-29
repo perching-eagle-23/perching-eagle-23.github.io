@@ -1,5 +1,9 @@
 @use 'variables';
 
+html {
+   color: variables.$text; 
+}
+
 body {
    font-family: variables.$body_font, sans-serif;
    font-size: 1.1em;
@@ -55,4 +59,32 @@ h2 {
 
 .midsection > p {
    line-height: 1.3em; 
+}
+
+/* Boxes for definitions and list items on list pages */
+
+.definition {
+   color: variables.$text;    
+   display: block;
+   box-shadow: 0px 1px 2px 0px variables.$definition_highlight;
+   padding: 10px;
+   border-radius: 5px; 
+   margin-top: 8px; 
+   margin-bottom: 8px; 
+}
+
+ul.definition{
+   list-style-type: none;
+}
+
+/* Equations might be standalone spans, or, if the entire definition or header or etc. is Tex, it might be appplied as a multiple class (as in : <span class="definition eqn">2D : \( d^2 := x^2 + y^2 \)</span> ).  Be wary of this overlap when applying eqn specific styles. */
+.eqn {
+   color: variables.$blue_1;  
+}
+
+.svg_wrapper {
+   /* border: 2px solid green; */
+   border: 2px solid variables.$definition_highlight; 
+   width: 100%; 
+   text-align: center; 
 }

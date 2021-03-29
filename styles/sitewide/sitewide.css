@@ -1,28 +1,9 @@
 /* COLORS */
 /* Do not use these variables in other files.  Use them as values for the theme variables below. */
-/* alternate greys */
 /* Reference only these variables in other files; test themes by changing their assignments here. */
 /* main theme */
-/* original sidebar greys */
-/* $sidebar_text: $light_grey;  */
-/* $sidebar_background: $black;  */
-/* $sidebar_text_hover: $lighter_grey;  */
 /* alternate greys */
-/* (bad) dark theme */
-/* $rich_black: #0c090dff; */
-/* $ua_red: #e01a4fff; */
-/* $fire_opal: #f15946ff; */
-/* $orange_yellow: #f9c22eff; */
-/* $maximum_blue: #53b3cbff; */
-/* $background: $rich-black; */
-/* $background_2: $greenish_black;  */
-/* $background_highlight_1: $ua_red; */
-/* $text: $maximum_blue; */
-/* $text_highlight_1: $orange_yellow;  */
-/* $definition_highlight: $fire_opal;  */
-/* $sidebar_text: $fire_opal;  */
-/* $sidebar_background: $rich_black;  */
-/* $sidebar_text_hover: $maximum_blue;  */
+/* alternate greys */
 /* FONTS */
 @font-face {
   font-family: "Gentium";
@@ -33,6 +14,10 @@
   /* multiple formats for browser compatibility */
   src: url("fonts/cmbright/cmunbmr.woff") format("woff"), url("fonts/cmbright/cmunbmr.eot") format("eot"), url("fonts/cmbright/cmunbmr.ttf") format("ttf");
 }
+html {
+  color: #303633;
+}
+
 body {
   font-family: "Computer Modern Bright", sans-serif;
   font-size: 1.1em;
@@ -85,6 +70,33 @@ h2 {
 }
 .midsection > p {
   line-height: 1.3em;
+}
+
+/* Boxes for definitions and list items on list pages */
+.definition {
+  color: #303633;
+  display: block;
+  box-shadow: 0px 1px 2px 0px #F09D51;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+ul.definition {
+  list-style-type: none;
+}
+
+/* Equations might be standalone spans, or, if the entire definition or header or etc. is Tex, it might be appplied as a multiple class (as in : <span class="definition eqn">2D : \( d^2 := x^2 + y^2 \)</span> ).  Be wary of this overlap when applying eqn specific styles. */
+.eqn {
+  color: #363946;
+}
+
+.svg_wrapper {
+  /* border: 2px solid green; */
+  border: 2px solid #F09D51;
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=sitewide.css.map */

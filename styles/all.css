@@ -163,10 +163,10 @@ h2 {
 /* @use 'variables'; */
 /* @use 'sitewide'; */
 .mainwrapper {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
 }
 
 .subwrapper {

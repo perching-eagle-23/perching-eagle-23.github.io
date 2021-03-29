@@ -36,7 +36,7 @@
    </div> -->
  <?php 
       $pagetitle = 'Topics / Triangles'; 
-      include("../templates/headerandnav.php"); 
+      include("../../templates/headerandnav.php"); 
    ?>
    
 

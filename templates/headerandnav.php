@@ -1,4 +1,4 @@
-<?php include("../configuration/config.php"); ?>
+<?php// include("../configuration/config.php"); ?>
 
 <div class="header">
    <div class="header__navicon"></div>

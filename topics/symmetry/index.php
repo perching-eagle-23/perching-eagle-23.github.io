@@ -18,7 +18,7 @@
       <div id="sub1content">
          <p>How are snowflakes so diverse, and yet so many have six sides?  Why are table salt crystals, and many other mineral crystals, cubic?  This question led Johannes Kepler to the first really solid (ha!) argument that matter is atomic; that it is built of building blocks which are, except in extreme physical circumstances, indivisible. {build : page from Strena seu de Nive Sexangula} By constructing large solids out of regular building blocks that lock together at regular angles, we can put the blocks together in any of quadrillions of ways, and still arrive at large shapes which are similar.  Actually, this is what "crystal" means - a solid in which the constituent atoms are arranged periodically, ie in a repeating pattern.  (Periodicity, which we study with the unit circle and trigonometric functions, is an instance of translational symmetry). {build : d3 circle packing with buttons for the different symmetry operations corresponding to animated transitions}</p>
          
-         <div id="circles" style="border:3px solid black; width:300px; height:300px;">
+         <div id="circles" style="border:3px solid black; width:400px; height:400px;">
             <svg id="circleholder"></svg>
          </div>
          

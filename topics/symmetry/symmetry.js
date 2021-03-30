@@ -7,7 +7,19 @@ window.onload = function(){
    attachNavHandlers();
    console.log('what');
    d3.select("#squareRef1").on("click", reflect); 
-   d3.selectAll("circle").on("click", reflect); 
+   d3.select("#squareRot1").on("click", function() {
+      d3.selectAll("g")
+         // .attr("transform", "rotate(0)")
+         // .transition()
+            // .duration(750)
+            // .attr("transform-origin", "75 75")
+            // .attr("transform", "rotate(270)")
+         .attr("transform", "none")
+         .transition()
+            .duration(750)
+            .attr("transform-origin", "75 75")
+            .attr("transform", "scale(-1,1)"); 
+   }); 
    console.log(changeOrigin([75,75])); 
    console.log(changeOrigin([0,0], false));
    console.log(changeOrigin([75,75], false)); 
@@ -35,76 +47,31 @@ function drawCircles() {
          .attr("cx", item[0])
          .attr("cy", item[1])
          .attr("r", 10)
-         .attr("fill", "blue"); 
+         .attr("fill", getRandColor([14,16]))
+         .classed("movable", true); 
    }); 
 
 }
 
 function reflect(angle) {
-   // var t = d3.transition()
-            // .duration(1000)
-            // .ease(d3.easeLinear); 
+   var t = d3.transition()
+      .duration(250)
+      .ease(d3.easeLinear); 
+   
+   // d3.select("svg").attr("transform-box", "fill-box"); 
             
    // d3.selectAll("circle[fill=blue]")
-      // .transition(t)
-      // .attr("cx", function() {
-         // var xCoord = parseFloat(d3.select(this).style("cx")); 
-         // var yCoord = parseFloat(d3.select(this).style("cy")); 
-         // return transformCoords([xCoord, yCoord], Math.PI / 2, 'rotate'); 
-      // })
-      // .attr("cy", function() {
-         // var xCoord = parseFloat(d3.select(this).style("cx")); 
-         // var yCoord = parseFloat(d3.select(this).style("cy")); 
-         // return transformCoords([xCoord, yCoord], Math.PI / 2, 'rotate', false); 
-      // });
-      var t = d3.transition()
-            .duration(250)
-            .ease(d3.easeLinear); 
-            
-   d3.selectAll("circle[fill=blue]")
+    d3.selectAll(".movable")
       .transition(t)
       .attr("cx", function() {
          var xCoord = parseFloat(d3.select(this).style("cx")); 
          var yCoord = parseFloat(d3.select(this).style("cy")); 
-         return transformCoords([xCoord, yCoord], Math.PI / 8, 'rotate'); 
+         return transformCoords([xCoord, yCoord], Math.PI, 'rotate'); 
       })
       .attr("cy", function() {
          var xCoord = parseFloat(d3.select(this).style("cx")); 
          var yCoord = parseFloat(d3.select(this).style("cy")); 
-         return transformCoords([xCoord, yCoord], Math.PI / 8, 'rotate', false); 
-      })
-      .transition()
-      .attr("cx", function() {
-         var xCoord = parseFloat(d3.select(this).style("cx")); 
-         var yCoord = parseFloat(d3.select(this).style("cy")); 
-         return transformCoords([xCoord, yCoord], Math.PI / 8, 'rotate'); 
-      })
-      .attr("cy", function() {
-         var xCoord = parseFloat(d3.select(this).style("cx")); 
-         var yCoord = parseFloat(d3.select(this).style("cy")); 
-         return transformCoords([xCoord, yCoord], Math.PI / 8, 'rotate', false); 
-      })
-      .transition(t)
-      .attr("cx", function() {
-         var xCoord = parseFloat(d3.select(this).style("cx")); 
-         var yCoord = parseFloat(d3.select(this).style("cy")); 
-         return transformCoords([xCoord, yCoord], Math.PI / 8, 'rotate'); 
-      })
-      .attr("cy", function() {
-         var xCoord = parseFloat(d3.select(this).style("cx")); 
-         var yCoord = parseFloat(d3.select(this).style("cy")); 
-         return transformCoords([xCoord, yCoord], Math.PI / 8, 'rotate', false); 
-      })
-      .transition(t)
-      .attr("cx", function() {
-         var xCoord = parseFloat(d3.select(this).style("cx")); 
-         var yCoord = parseFloat(d3.select(this).style("cy")); 
-         return transformCoords([xCoord, yCoord], Math.PI / 8, 'rotate'); 
-      })
-      .attr("cy", function() {
-         var xCoord = parseFloat(d3.select(this).style("cx")); 
-         var yCoord = parseFloat(d3.select(this).style("cy")); 
-         return transformCoords([xCoord, yCoord], Math.PI / 8, 'rotate', false); 
+         return transformCoords([xCoord, yCoord], Math.PI, 'rotate', false); 
       });
 
 
@@ -150,3 +117,18 @@ function transformCoords(coords, angle, type, isX = true) {
       return coords[1]; 
    }
 }
+
+function getRandColor(alpha=[0,16], red=[0,16], green=[0,16], blue=[0,16]) {
+      var hexChars = "0123456789abcdef";
+      var color = "#";
+      var agg = [red, green, blue, alpha]; 
+      // The parameters have syntax [minimum, range].  This allows for more green, less transparent, etc. color selection.
+      // Passing ([10,6],[10,4],[0,3],[4,5]), for example, gives Valentine's Day colors.
+      for (var i = 0; i < 4; i++) {
+         for (var j = 0; j < 2; j++) {
+            // Append the hex character at index miminum + x, where x is an integer less than range. 
+            color += hexChars.charAt(Math.floor(Math.random() * agg[i][1]) + agg[i][0]);
+         }
+      }
+      return color; 
+   }

@@ -2,7 +2,7 @@
       $pagetitle = 'Topics / Triangles'; 
       $pagescripts = "<!-- MathJax --> 
          <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>
-         <script src='symmetry.js' type='text/javascript'></script>"; 
+         <script defer src='symmetry.js' type='text/javascript'></script>"; 
       include("../../templates/head.php"); 
    ?>
    
@@ -18,9 +18,12 @@
       <div id="sub1content">
          <p>How are snowflakes so diverse, and yet so many have six sides?  Why are table salt crystals, and many other mineral crystals, cubic?  This question led Johannes Kepler to the first really solid (ha!) argument that matter is atomic; that it is built of building blocks which are, except in extreme physical circumstances, indivisible. {build : page from Strena seu de Nive Sexangula} By constructing large solids out of regular building blocks that lock together at regular angles, we can put the blocks together in any of quadrillions of ways, and still arrive at large shapes which are similar.  Actually, this is what "crystal" means - a solid in which the constituent atoms are arranged periodically, ie in a repeating pattern.  (Periodicity, which we study with the unit circle and trigonometric functions, is an instance of translational symmetry). {build : d3 circle packing with buttons for the different symmetry operations corresponding to animated transitions}</p>
          
-         <div id="circles" width="100px" height="100px" style="border:3px solid black;">
+         <div id="circles" style="border:3px solid black; width:300px; height:300px;">
             <svg id="circleholder"></svg>
          </div>
+         
+         <button id="squareRef1">Reflect vertical</button>
+         <button id="squareRot1">Rotate counterclockwise</button>
 
          <p>To get direct evidence of this, we shot X-rays through cyrstals, and got these patterns out the other side.  {build : simple cubic and hcp diffraction patterns} These images are in some sense the geometric "inverse" of the actual arrangment of the atoms; still, the symmetry survives this transformation.  (This is an example of an extremely powerful area of study called the inverse scattering problem, which describes optics, collisions, particle interactions, and much more).  For the first time, atomicity was no longer a philosophical quandry: symmetry in X-ray projections closed the case.</p>
          

@@ -5,22 +5,24 @@
       include("../templates/head.php"); 
    ?>
    
-   <div class="ouptut">
-      <?php
-         $db = new PDO("mysql:dbname=mathsite;host=localhost","root"); 
-         $rows = $db->query("SELECT title, link, description FROM reference"); 
-      ?> 
-      <ul> 
-      <?php
-      foreach ($rows as $row) {
-         ?>
-         <li>
-            <a href="<?= $row['link'] ?>" target="blank"><?= $row['title'] ?></a>
-            : <?= $row['description'] ?>
-         </li>
+   <div class="mainwrapper">
+      <div class="subwrapper">
          <?php
-      }
-      ?>
-      </ul>
+            $db = new PDO("mysql:dbname=mathsite;host=localhost","root"); 
+            $rows = $db->query("SELECT title, link, description FROM reference"); 
+         ?> 
+         <ul> 
+         <?php
+         foreach ($rows as $row) {
+            ?>
+            <li class="definition listitem">
+               <a href="<?= $row['link'] ?>" target="blank"><?= $row['title'] ?></a>
+               : <?= $row['description'] ?>
+            </li>
+            <?php
+         }
+         ?>
+         </ul>
+      </div>
    </div>
 </body>

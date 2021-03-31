@@ -7,15 +7,14 @@ window.onload = function(){
    drawCircles();
    attachNavHandlers();
     
-   d3.select("#tom").on("click", function() {
-      var operations = this.innerText; 
-      rotateGroup(this.innerText, ".hexagonGroupToMove"); 
-   });
-   
    d3.select(".button_label8").selectAll("button").on("click", function() {
       var operations = this.innerText; 
       rotateGroup(this.innerText, ".squareGroupToMove");
-      rotateGroup(this.innerText, ".squareGroupToMove");
+   }); 
+   
+   d3.select(".button_label12").selectAll("button").on("click", function() {
+      var operations = this.innerText; 
+      rotateGroup(this.innerText, ".hexagonGroupToMove");
    }); 
    
    d3.select("#squareRef1").on("click", reflect); 
@@ -76,7 +75,7 @@ function drawCirclesHelper(coords, classname) {
          .attr("cx", item[0])
          .attr("cy", item[1])
          .attr("r", (2 / 5) * circleRadius)
-         .attr("fill", "blue")
+         .attr("fill", getRandColor([15,16]))
          .classed("movable", true); 
    }); 
 }
@@ -114,7 +113,15 @@ function rotateGroup(operations, classname) {
                .attr("transform", transString3)
           
    } else {
-      
+      var offset = 2 ** (-1 / 2) 
+      var transString = "scale(" + -1 + "," + 1 + ")";
+      d3.select(classname).selectAll("circle")
+         .attr("transform", "scale(1)")
+         .transition()
+            .duration(250)
+            .ease(d3.easeLinear)
+            .attr("transform-origin", "50 50")
+            .attr("transform", "rotate(" + angle + ")scale(-1,1)")
    }
    
    // fancy color change not working
@@ -163,16 +170,16 @@ function reflect(angle) {
 
 
 function getRandColor(alpha=[0,16], red=[0,16], green=[0,16], blue=[0,16]) {
-      var hexChars = "0123456789abcdef";
-      var color = "#";
-      var agg = [red, green, blue, alpha]; 
-      // The parameters have syntax [minimum, range].  This allows for more green, less transparent, etc. color selection.
-      // Passing ([10,6],[10,4],[0,3],[4,5]), for example, gives Valentine's Day colors.
-      for (var i = 0; i < 4; i++) {
-         for (var j = 0; j < 2; j++) {
-            // Append the hex character at index miminum + x, where x is an integer less than range. 
-            color += hexChars.charAt(Math.floor(Math.random() * agg[i][1]) + agg[i][0]);
-         }
+   var hexChars = "0123456789abcdef";
+   var color = "#";
+   var agg = [red, green, blue, alpha]; 
+   // The parameters have syntax [minimum, range].  This allows for more green, less transparent, etc. color selection.
+   // Passing ([10,6],[10,4],[0,3],[4,5]), for example, gives Valentine's Day colors.
+   for (var i = 0; i < 4; i++) {
+      for (var j = 0; j < 2; j++) {
+         // Append the hex character at index miminum + x, where x is an integer less than range. 
+         color += hexChars.charAt(Math.floor(Math.random() * agg[i][1]) + agg[i][0]);
       }
-      return color; 
    }
+   return color; 
+}

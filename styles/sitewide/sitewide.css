@@ -40,6 +40,17 @@ h2 {
   margin-bottom: 0.6em;
 }
 
+button {
+  background-color: #F8F4E3;
+  color: #303633;
+  border: none;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: #52FFEE;
+}
+
 /* Collapsible sections */
 .subsection {
   background-image: url("icons/up_arrow.svg");

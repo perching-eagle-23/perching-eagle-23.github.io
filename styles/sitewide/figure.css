@@ -1,0 +1,71 @@
+/* COLORS */
+/* Do not use these variables in other files.  Use them as values for the theme variables below. */
+/* Reference only these variables in other files; test themes by changing their assignments here. */
+/* main theme */
+/* alternate greys */
+/* alternate greys */
+/* FONTS */
+@font-face {
+  font-family: "Gentium";
+  src: url("fonts/genbasb.ttf");
+}
+@font-face {
+  font-family: "Computer Modern Bright";
+  /* multiple formats for browser compatibility */
+  src: url("fonts/cmbright/cmunbmr.woff") format("woff"), url("fonts/cmbright/cmunbmr.eot") format("eot"), url("fonts/cmbright/cmunbmr.ttf") format("ttf");
+}
+.figure {
+  border: 1px solid #F09D51;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .figure {
+    margin-left: -20%;
+    margin-right: -20%;
+  }
+}
+.figure__title {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+.figure__image * {
+  /* border: 2px solid variables.$gold_1; */
+  padding-left: auto;
+  padding-right: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .figure__image2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 9px;
+  }
+}
+.figure__label {
+  font-style: oblique;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button_label8 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2px;
+  /* grid-template-rows: 1fr 1fr;  */
+  grid-gap: 2px;
+  grid-auto-height: minmax(10px, 15px);
+}
+
+.button_label12 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 2px;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+}
+
+/*# sourceMappingURL=figure.css.map */

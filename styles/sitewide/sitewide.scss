@@ -26,6 +26,17 @@ h2 {
    margin-bottom: 0.6em;
 }
 
+button {
+   background-color: variables.$background_2; 
+   color: variables.$text; 
+   border: none; 
+   padding: 5px; 
+}
+
+button:hover {
+   background-color: variables.$background_highlight_1; 
+}
+
 /* Collapsible sections */
 
 .subsection {

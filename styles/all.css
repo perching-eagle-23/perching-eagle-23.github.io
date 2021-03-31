@@ -40,6 +40,17 @@ h2 {
   margin-bottom: 0.6em;
 }
 
+button {
+  background-color: #F8F4E3;
+  color: #303633;
+  border: none;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: #52FFEE;
+}
+
 /* Collapsible sections */
 .subsection {
   background-image: url("icons/up_arrow.svg");
@@ -170,6 +181,60 @@ ul.definition {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.figure {
+  border: 1px solid #F09D51;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .figure {
+    margin-left: -20%;
+    margin-right: -20%;
+  }
+}
+.figure__title {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+.figure__image * {
+  /* border: 2px solid variables.$gold_1; */
+  padding-left: auto;
+  padding-right: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .figure__image2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 9px;
+  }
+}
+.figure__label {
+  font-style: oblique;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button_label8 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2px;
+  /* grid-template-rows: 1fr 1fr;  */
+  grid-gap: 2px;
+  grid-auto-height: minmax(10px, 15px);
+}
+
+.button_label12 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 2px;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
 }
 
 /* @use 'variables'; */

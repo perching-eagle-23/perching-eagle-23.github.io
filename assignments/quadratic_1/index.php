@@ -8,7 +8,7 @@
    ?>
 
 
-   <div class="midsection">
+   <div class="midsection pset">
       <h1>Quadratic equations 1</h1>
       <ol>
          <li>State whether the product xy is negative or positive, and why.
@@ -33,11 +33,16 @@
             </ol>
          
          </li>
-         
+         <!--
          <div style="text-align:center; margin-top:20px;">
             <iframe src="https://www.desmos.com/calculator/zukjgk9iry" name="frame_1" height="500" width="90%" title="Desmos"> </iframe>
          </div>
+         -->
       </ol>
    </div>
+   
+   <div style="text-align:center; margin-top:20px;">
+            <iframe src="https://www.desmos.com/calculator/zukjgk9iry" name="frame_1" height="500" width="90%" title="Desmos"> </iframe>
+         </div>
 </body>
 </html>

@@ -6,7 +6,7 @@
       $pagescripts = "<!-- MathJax --> 
          <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>
          <script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
-         <script defer src='triangles.js' type='text/javascript'></script>";
+         <script defer src='triangles2.js' type='text/javascript'></script>";
       $pagetitle = 'Topics / Triangles'; 
       include("../../templates/head.php"); 
    ?>
@@ -19,11 +19,18 @@
       <h2 class="subsection" id="sub1">Distance and the Shape of Spaces</h2>
       <div id="sub1content">
          <p>Here is an unusual "triangle".  It has three right angles, for an angle sum of \( 270^{\circ} \).</p>
-         
-         <h2><span class="eqn">\(\angle{a} + \angle{b} + \angle{c} = ?\)</span></h2>
-         <div class="svg_wrapper" id="globe">
-            <svg class="large_graphic" id="triangle_on_sphere" height=400 width=600> 
-            </svg>
+ 
+         <div class="figure">
+            <h3 class="figure__title">\(\angle{a} + \angle{b} + \angle{c} = ?\)</h3>
+            <div id="globe" class="figure__image"></div>
+            <!--
+            <form action="" id="entry">
+               <input type="text" id="legLength">
+               <input type="submit" />
+            </form>
+            -->
+            <input type="text" id="legLength" />
+            <p class="figure__label"></p>
          </div>
          
          <p>Clearly, this is not quite a triangle in the sense in which we've defined it so far. <span class="definition">Triangle \( :=  \) A polygon composed of three line segments connecting any three points in the plane which are not colinear.</span> Here's a broader definition.  <span class="definition">Triangle-y thing \( :=  \) A shape composed of the three shortest paths in a space between any three points in that space which are not on a the same path.</span>  (If you want to look more into it the shortest path on a surface is called a  <em>geodesic.</em>)</p>

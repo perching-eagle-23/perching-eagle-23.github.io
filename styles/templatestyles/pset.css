@@ -1,5 +1,9 @@
-.pset > li {
-  margin-top: 50px;
+.pset li {
+  margin-top: 12px;
+}
+
+.pset li li {
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=pset.css.map */

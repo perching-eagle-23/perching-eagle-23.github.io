@@ -71,6 +71,7 @@ button:hover {
   border-radius: 10px;
   padding: 23px;
   padding-top: 8px;
+  text-align: justify;
 }
 
 /* Reduce the margins for mobile */
@@ -83,6 +84,10 @@ button:hover {
   line-height: 1.3em;
 }
 
+.midsection p {
+  text-indent: 2rem;
+}
+
 /* Boxes for definitions and list items on list pages */
 .definition {
   color: #303633;
@@ -92,6 +97,10 @@ button:hover {
   border-radius: 5px;
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+p.definition {
+  text-indent: 0px;
 }
 
 ul.definition {

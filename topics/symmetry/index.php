@@ -2,6 +2,7 @@
       $pagetitle = 'Topics / Symmetry'; 
       $pagescripts = "<!-- MathJax --> 
          <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>
+         <script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
          <script defer src='symmetry.js' type='text/javascript'></script>"; 
       include("../../templates/head.php"); 
    ?>
@@ -10,23 +11,21 @@
       <h1>Applications of Symmetry</h1>
       <p>Symmetry is an ubiquitous topic in mathematics.  It underlies many physical phenomena, and when symmetry is recognized in a problem, it often provides a much shorter way of solving the problem.</p>
       
-      <p class="definition">Symmetry \( := \)"A symmetry" of collection of objects is an operation which, after it is performed, leaves the objects unchanged.</p>
+      <p class="definition">Symmetry \( := \) "A symmetry" of collection of objects is an operation which, after it is performed, leaves the objects unchanged.</p>
       
       <p>Many shapes are symmetrical, but it's not just about shapes, or rather, it's not just about literal shapes.  By considering functions and/or data in a time series or along another axis, we can use the same geometric and algebraic techniques to reveal and understand patterns in many situations.  I'll start with a literal shape: we can then understand the underlying geometry of the more abstract examples.</p>
       
       <h2 class="subsection" id="sub1">Section 1: Crystals</h2>
       <div id="sub1content">
-         <p>How are snowflakes so diverse, and yet so many have six sides?  Why are table salt crystals, and many other mineral crystals, cubic?  This question led Johannes Kepler to the first really solid (ha!) argument that matter is atomic; that it is built of building blocks which are, except in extreme physical circumstances, indivisible. {build : page from Strena seu de Nive Sexangula} By constructing large solids out of regular building blocks that lock together at regular angles, we can put the blocks together in any of quadrillions of ways, and still arrive at large shapes which are similar.  Actually, this is what "crystal" means - a solid in which the constituent atoms are arranged periodically, ie in a repeating pattern.  (Periodicity, which we study with the unit circle and trigonometric functions, is an instance of translational symmetry). {build : d3 circle packing with buttons for the different symmetry operations corresponding to animated transitions}</p>
-         
-         <!--
-         <div id="circles" style="border:3px solid black; width:400px; height:400px;">
-            <svg id="circleholder"></svg>
+         <p>How are snowflakes so diverse, and yet so many have six sides?  Why are table salt crystals, and many other mineral crystals, cubic? <div style="float: right; margin-left: 20px; clear: all;">
+            <img src="../../figures/images/sexangula_kepler.jpg" />
+            <p class="figure__label" style="width:200px;">A page from Johannes Kepler's 1611 Strena Seu de Nive Sexangula</p>
          </div>
-         <button id="squareRef1">Reflect vertical</button>
-         <button id="squareRot1">Rotate counterclockwise</button>
-         -->
+          This question led Johannes Kepler to the first really solid (ha!) argument that matter is atomic; that it is built of building blocks which are, except in extreme physical circumstances, indivisible. 
+         {build : page from Strena seu de Nive Sexangula} By constructing large solids out of regular building blocks that lock together at regular angles, we can put the blocks together in any of quadrillions of ways, and still arrive at large shapes which are similar.  Actually, this is what "crystal" means - a solid in which the constituent atoms are arranged periodically, ie in a repeating pattern.  (Periodicity, which we study with the unit circle and trigonometric functions, is an instance of translational symmetry). {build : d3 circle packing with buttons for the different symmetry operations corresponding to animated transitions}</p>
          
-         <div class="figure">
+    
+         <div class="figure" style="clear: right;">
             <h3 class="figure__title">Symmetry transforms</h3>
             <div class="figure__image figure__image2">
                <div>

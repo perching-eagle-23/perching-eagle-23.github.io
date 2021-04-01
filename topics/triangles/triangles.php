@@ -1,45 +1,16 @@
-<!doctype html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <title>Triangles</title>
-   <link href="../styles/all.css" rel="stylesheet" type="text/css" />
+   <!-- map works better with v4 
+   <script src="https://d3js.org/d3.v4.js"></script> -->
 
-   <!-- Load d3.js -->
-   <script src="https://d3js.org/d3.v4.js"></script>
-   <!-- d3 map stuff ; working without now, irregular.  Map doesn't work with d3.v6-->
-   <!-- <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> -->
-   <!-- <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script> -->
-   <!-- d3 slider  -->
-   <script src="https://unpkg.com/d3-simple-slider"></script>
-   <!-- MathJax --> 
-   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-   <!-- Page specific.  "defer" means load after the page, instead of when the tag is encountered. -->
-   <script defer src="../styles/nav.js" type="text/javascript"></script>
-   <script defer src="triangles.js" type="text/javascript"></script>
-</head>
-<body>
-  <!--  <div class="header">
-      <div class="header__navicon"></div>
-      <h1 class="pagetitle">
-         <a href="../index.html">Room 202 Math</a>
-         <a href=""> / Topics</a>
-      </h1>
-   </div>
-   
-   <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn">&times;</a>
-      <a href="../index.html">Home</a>
-      <a href="#">Topics</a>
-      <a href="#">Assignments</a>
-   </div> -->
+
  <?php 
+      $pagescripts = "<!-- MathJax --> 
+         <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>
+         <script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+         <script defer src='triangles.js' type='text/javascript'></script>";
       $pagetitle = 'Topics / Triangles'; 
-      include("../../templates/headerandnav.php"); 
+      include("../../templates/head.php"); 
    ?>
    
-
    <div class="midsection">
       <h1>Why Triangles?</h1> 
       <p>Why is the math curriculum so concerned with the Pythagorean Theorem, the relation of triangle angles and sides, and trigonometric functions?</p>

@@ -120,7 +120,7 @@
                   <img src="../../figures/images/hubble_deep.jpg" width="100%">
                </div>
             </div>
-            <p class="figure__label">A Hubble deep field image of lots of spinny, disky things - galaxies, if you're a stickler.<br />  Credit: NASA; ESA; G. Illingworth, D. Magee, and P. Oesch, University of California, Santa Cruz; R. Bouwens, Leiden University; and the HUDF09 Team.  Accessed at https://www.nasa.gov/mission_pages/hubble/science/xdf.html March 2021</p>
+            <p class="figure__label">A Hubble deep field image of lots of spinny, disky things - galaxies, if you're a stickler.<br />  Credit: NASA; ESA; G. Illingworth, D. Magee, and P. Oesch, University of California, Santa Cruz; R. Bouwens, Leiden University; and the HUDF09 Team.  Accessed <a href="https://www.nasa.gov/mission_pages/hubble/science/xdf.html" target="_blank">here</a> March 2021</p>
          </div>
 
          <!-- build later

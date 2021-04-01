@@ -2,10 +2,14 @@
 var legLength = 10; 
 
 window.onload = function(){
+   // nav panel functions
+   attachNavHandlers();
+   
+   // the globe triangle graphic
    drawGreatCircles(); 
    drawSlider();
    // byId("globe").onclick = drawGreatCircles;
-   attachNavHandlers();
+
 }; 
 
 function drawBlankMap() {

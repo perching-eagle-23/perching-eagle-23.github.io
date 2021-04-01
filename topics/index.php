@@ -8,14 +8,14 @@
          <?php 
             $topics = [
                   [
-                     "./triangles/triangles.php",
-                     'Why Triangles?',
-                     'The motivation for studying the geometry of triangles and the behavior of trigonometric functions.'
-                  ],
-                  [
                      "./symmetry",
                      'Applications of Symmetry',
                      'Symmetry is an ubiquitous topic in mathematics.  It underlies many physical phenomena, and when symmetry is recognized in a problem, it often provides a much shorter way of solving the problem.'
+                  ],
+                  [
+                     "./triangles/triangles.php",
+                     'Why Triangles?',
+                     'The motivation for studying the geometry of triangles and the behavior of trigonometric functions.'
                   ],
                   [
                      "./logic",

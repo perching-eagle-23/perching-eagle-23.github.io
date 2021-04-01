@@ -37,6 +37,10 @@ button:hover {
    background-color: variables.$background_highlight_1; 
 }
 
+em {
+  font-style: italic; 
+}
+
 /* Collapsible sections */
 
 .subsection {
@@ -59,7 +63,7 @@ button:hover {
    border-radius: 10px; 
    padding: 23px; 
    padding-top: 8px;
-   text-align: justify;
+   /* text-align: justify; */
 }
 
 /* Reduce the margins for mobile */
@@ -71,10 +75,6 @@ button:hover {
 
 .midsection > p {
    line-height: 1.3em; 
-}
-
-.midsection p {
-   text-indent: 2rem;
 }
 
 /* Boxes for definitions and list items on list pages */
@@ -107,4 +107,9 @@ ul.definition{
    border: 2px solid variables.$definition_highlight; 
    width: 100%; 
    text-align: center; 
+}
+
+.center_quote {
+   text-align: center;
+   font-style: italic; 
 }

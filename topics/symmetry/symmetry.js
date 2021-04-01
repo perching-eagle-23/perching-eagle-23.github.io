@@ -76,9 +76,7 @@ function rotateGroup(operations, classname) {
       .delay(1000)
       .duration(300)
       .ease(d3.easeLinear); 
-   
-   
-   var transString = ''; 
+    
    if (type == "r") {
          // In three frames since otherwise the larger rotations transition in the opposite direction
          var transString1 = "rotate(" + (angle / 3) + ")"; 
@@ -106,17 +104,13 @@ function rotateGroup(operations, classname) {
                .attr("fill", "blue");
           
    } else {
-      var offset = 2 ** (-1 / 2) 
-      var transString = "scale(" + -1 + "," + 1 + ")";
       d3.select(classname).selectAll("circle")
-         // Reset, otherwise the transform will not be repeatable since the DOM state is same at start and end
+         // Reset
          .attr("transform", "scale(1)")
          .each(function( ){
             d3.select(this).transition(t).attr("fill", getRandColor([14,16]));
          })
          .transition(t_del)
-            .duration(250)
-            .ease(d3.easeLinear)
             .attr("transform-origin", "50 50")
             .attr("transform", "rotate(" + angle + ")scale(-1,1)")
          .transition()

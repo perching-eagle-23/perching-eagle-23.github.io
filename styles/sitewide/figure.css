@@ -18,6 +18,7 @@
   border: 1px solid #F09D51;
   border-radius: 5px;
   padding: 5px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -68,6 +69,19 @@
   grid-column-gap: 2px;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2px;
+}
+
+.inline_figure {
+  display: table;
+  float: right;
+  margin-left: 20px;
+}
+
+.inline_figure__label {
+  display: table-caption;
+  caption-side: bottom;
+  font-size: 0.9em;
+  text-indent: 0px;
 }
 
 /*# sourceMappingURL=figure.css.map */

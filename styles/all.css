@@ -51,6 +51,10 @@ button:hover {
   background-color: #52FFEE;
 }
 
+em {
+  font-style: italic;
+}
+
 /* Collapsible sections */
 .subsection {
   background-image: url("icons/up_arrow.svg");
@@ -71,7 +75,7 @@ button:hover {
   border-radius: 10px;
   padding: 23px;
   padding-top: 8px;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 /* Reduce the margins for mobile */
@@ -82,10 +86,6 @@ button:hover {
 }
 .midsection > p {
   line-height: 1.3em;
-}
-
-.midsection p {
-  text-indent: 2rem;
 }
 
 /* Boxes for definitions and list items on list pages */
@@ -117,6 +117,11 @@ ul.definition {
   border: 2px solid #F09D51;
   width: 100%;
   text-align: center;
+}
+
+.center_quote {
+  text-align: center;
+  font-style: italic;
 }
 
 /* Header */
@@ -196,6 +201,7 @@ ul.definition {
   border: 1px solid #F09D51;
   border-radius: 5px;
   padding: 5px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -246,6 +252,19 @@ ul.definition {
   grid-column-gap: 2px;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2px;
+}
+
+.inline_figure {
+  display: table;
+  float: right;
+  margin-left: 20px;
+}
+
+.inline_figure__label {
+  display: table-caption;
+  caption-side: bottom;
+  font-size: 0.9em;
+  text-indent: 0px;
 }
 
 /* @use 'variables'; */

@@ -16,7 +16,8 @@ window.onload = function(){
       
       console.log(document.getElementById("legLength").value);
       let offset = byId("legLength").value; 
-      drawTriangle(path, offset, true);} ); 
+      drawTriangle(path, offset, true);} 
+   ); 
 }; 
 
 function drawGlobe() {
@@ -68,7 +69,6 @@ function drawGlobe() {
     }
   }))
 
-
   let map = svg.append("g")
 
   d3.json("https://raw.githubusercontent.com/michael-keith/mps_interests/master/view/js/charts/data/world_map.json").then(function(d) {
@@ -112,11 +112,11 @@ function drawTriangle(path, offsetString, clear = true) {
    }
    let polyLegs = [{"type":"Feature","properties":{"name":"Triangle"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[0,offset],[offset,0],[0,0]]]},"id":"Triangle"}];
    
-   if (clear) {
-      d3.select("g.triangle")
-         .selectAll("*")
-         .remove()         
-   }
+   // if (clear) {
+      // d3.select("g.triangle")
+         // .selectAll("*")
+         // .remove()         
+   // }
    
    d3.select("g.triangle")
       .selectAll("path")

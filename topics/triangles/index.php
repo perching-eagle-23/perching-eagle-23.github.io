@@ -30,7 +30,11 @@
             </form>
             -->
             <input type="text" id="legLength" />
-            <p class="figure__label"></p>
+            <p class="figure__label">The legs which meet off the coast of Ghana have the same length and are fixed at a right angle.  Their length is changed with the slider, and the "hypotenuse" moves with them.  The world map is there just to provide you familiar reference points so the sphere's geometry is more intuitive.
+            <!--
+            <br/>
+            Although it is not the point of this article, this figure also illustrates how any two "straight lines" - great circles, in this case - on the sphere meet at two points.  This is an alternative to Euclid's <a href="https://en.wikipedia.org/wiki/Parallel_postulate" target="_blank">fifth postulate</a> regarding the notion "parallel", which is a very important part of the story of geometry, and of the development of non-euclidian geometries in recent centuries, which in turn enabled the development of relativity.-->
+            </p>
          </div>
          
          <p>Clearly, this is not quite a triangle in the sense in which we've defined it so far. <span class="definition">Triangle \( :=  \) A polygon composed of three line segments connecting any three points in the plane which are not colinear.</span> Here's a broader definition.  <span class="definition">Triangle-y thing \( :=  \) A shape composed of the three shortest paths in a space between any three points in that space which are not on a the same path.</span>  (If you want to look more into it the shortest path on a surface is called a  <em>geodesic.</em>)</p>

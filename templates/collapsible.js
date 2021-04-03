@@ -7,7 +7,7 @@
       //var data = d3.json("treedata.json").then(function(data) {
       /* DSV SPECIFIC */
       /* working with file "../curriculum/curriculum_out1WithParent.txt" */
-      d3.dsv("	", "../curriculum/curriculum_outWithParent.txt").then(function(data) {
+      d3.dsv("	", "curriculum/state.txt").then(function(data) {
          // Runs the layout and returns the objects from the data
          // See this page for description : https://stackoverflow.com/questions/41087568/d3js-tree-nodes-is-not-a-function
          var childColumn = data.columns[0];

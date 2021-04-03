@@ -1,0 +1,275 @@
+id	parent	name	content	isDifficult	isModelling
+root		Root	F	F
+4,2	4	Similarity, right triangles	Similarity, Right Triangles, and Trigonometry	F	F
+1,1	1	Real numbers	The Real Number System	F	F
+1,1,1	1,1	Rational exponents	Extend the properties of exponents to rational exponents.	F	F
+1,1,1,1	1,1,1	Justify rational exponents	Explain how the definition of rational exponents follows from extending the properties of integer exponents to those values, allowing for a notation for radicals in terms of rational exponents. For example, we define 51/3 to be the cube root of S because we want (51/3)3 = 5(1/3)3 to hold, so (51/3)3 must equal 5.	F	F
+1,1,1,2	1,1,1	Manipulate radicals	Rewrite expressions involving radicals and rational exponents using the properties of exponents.	F	F
+1,1,2	1,1	Rational and irrational no.’s	Use properties of rational and irrational numbers.	F	F
+1,1,2,1	1,1,2	Closure of rationals	Explain why the sum or product of two rational numbers is rational; that the sum of a rational number and an irrational number is irrational; and that the product of a nonzero rational number and an irrational number is irrational.	F	F
+1,2	1	Quantities	Quantities	F	T
+1,2,1	1,2	Use units	Reason quantitatively and use units to solve problems.	F	T
+1,2,1,1	1,2,1	Units hint at solutions	Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays.	F	T
+1,2,1,2	1,2,1	Model quantities appropriately	Define appropriate quantities for the purpose of descriptive modeling.	F	T
+1,2,1,3	1,2,1	Accuracy and sig. figs.	Choose a level of accuracy appropriate to limitations on measurement when reporting quantities.	F	T
+1,3	1	Complex numbers	The Complex Number System	F	F
+1,3,1	1,3	Complex arithmetic	Perform arithmetic operations with complex numbers.	F	F
+1,3,1,1	1,3,1	Definition of i	Know there is a complex number i such that i2 = -1, and every complex number has the form a+bi with a and b real.	F	F
+1,3,1,2	1,3,1	Define arithmetic ops	Use the relation i2 = —1 and the commutative, associative, and distributive properties to add, subtract, and multiply complex numbers.	F	F
+1,3,1,3	1,3,1	Complex conjugate	Find the conjugate of a complex number; use conjugates to find moduli and quotients of complex numbers.	T	F
+1,3,2	1,3	Complex plane	Represent complex numbers and their operations on the complex plane.	F	F
+1,3,2,1	1,3,2	Interpret plane points	Represent complex numbers on the complex plane in rectangular and polar form {including real and imaginary numbers), and explain why the rectangular and polar forms of a given complex number represent the same number.	T	F
+1,3,2,2	1,3,2	Geometry of complex ops	Represent addition, subtraction, multiplication, and conjugation of complex numbers geometrically on the complex plane; use properties of this representation for computation. For example, (-1 + √3 i)3 = 8 because (-1 + √3 i) has modulus 2 and argument 120°.	T	F
+1,3,2,3	1,3,2	Distance in the plane	Calculate the distance between numbers in the complex plane as the modulus of the difference, and the midpoint of a segment as the average of the numbers at its endpoints.	T	F
+1,3,3	1,3	Complex polynomial solutions	Use complex numbers in polynomial identities and equations.	F	F
+1,3,3,1	1,3,3	Quadratic solutions	Solve quadratic equations with real coefficients that have complex solutions.	F	F
+1,3,3,2	1,3,3	Extend polynomial identities	Extend polynomial identities to the complex numbers. For example, rewrite x2 + 4 as (x + 2i)(x - 2i).	T	F
+1,3,3,3	1,3,3	Fundamental thm. algebra	Know the Fundamental Theorem of Algebra; show that it is true for quadratic polynomials.	T	F
+1,4	1	Vectors and matrices	Vector and Matrix Quantities	F	F
+1,4,1	1,4	Model with vectors	Represent and model with vector quantities.	F	F
+1,4,1,1	1,4,1	Magnitude and direction	Recognize vector quantities as having both magnitude and direction. Represent vector quantities by directed line segments, and use appropriate symbols for vectors and their magnitudes (e.g., v, |v|, ||v||).	T	F
+1,4,1,2	1,4,1	Vector components	Find the components of a vector by subtracting the coordinates of an initial point from the coordinates of a terminal point.	T	F
+1,4,1,3	1,4,1	Velocity	Solve problems involving velocity and other quantities that can be represented by vectors.	T	F
+1,4,2	1,4	Vector operations	Perform operations on vectors.	F	F
+1,4,2,1	1,4,2	Addition	Add and subtract vectors.	T	F
+1,4,2,1,1	1,4,2,1	Parallelogram rule	Add vectors end-to-end, component-wise, and by the parallelogram rule. Understand that the magnitude of a sum of two vectors is typically not the sum of the magnitudes.	T	F
+1,4,2,1,2	1,4,2,1	Vector sum geometry	Given two vectors in magnitude and direction form, determine the magnitude and direction of their sum.	T	F
+1,4,2,1,3	1,4,2,1	Vector subtraction geometry	Understand vector subtraction v — w as v + (-w), where —w is the additive inverse of w, with the same magnitude as w and pointing in the opposite direction. Represent vector subtraction graphically by connecting the tips in the appropriate order, and perform vector subtraction component-wise.	T	F
+1,4,2,2	1,4,2	Scalar product	Multiply a vector by a scalar.	T	F
+1,4,2,2,1	1,4,2,2	Scalar product geometry	Represent scalar multiplication graphically by scaling vectors and possibly reversing their direction; perform scalar multiplication component-wise, e.g., as c(vx, vy) = (cvx, cvy).	T	F
+1,4,2,2,2	1,4,2,2	Product magnitude	Compute the magnitude of a scalar multiple cv using ||cv|| = |c|v. Compute the direction of cv knowing that when |c|v ≠ 0, the direction of cv is either along v (for c > 0) or against v (for c < 0).	T	F
+1,4,3	1,4	Matrix ops and applications	Perform operations on matrices and use matrices in applications.	T	F
+1,4,3,1	1,4,3	Data and manipulations	Use matrices to represent and manipulate data, e.g., to represent payoffs or incidence relationships in a network.	T	F
+1,4,3,2	1,4,3	Scalar product of matrices	Multiply matrices by scalars to produce new matrices, e.g., as when all of the payoffs in a game are doubled.	T	F
+1,4,3,3	1,4,3	Matr. addition and product	Add, subtract, and multiply matrices of appropriate dimensions.	T	F
+1,4,3,4	1,4,3	Noncommutativity of product	Understand that, unlike multiplication of numbers, matrix multiplication for square matrices is not a commutative operation, but still satisfies the associative and distributive properties.	T	F
+1,4,3,5	1,4,3	Identity matrix	Understand that the zero and identity matrices play a role in matrix addition and multiplication similar to the role of 0 and 1 in the real numbers. The determinant of a square matrix is nonzero if and only if the matrix has a multiplicative inverse.	T	F
+1,4,3,6	1,4,3	Matrix by a vector	Multiply a vector (regarded as a matrix with one column) by a matrix of suitable dimensions to produce another vector. Work with matrices as transformations of vectors.	T	F
+1,4,3,7	1,4,3	SU(2)	Work with 2 x 2 matrices as transformations of the plane, and interpret the absolute value of the determinant in terms of area.	T	F
+2	root	Algebra	Algebra	F	F
+2,1	2	Expression Structure	Seeing Structure in Expressions	F	F
+2,1,1	2,1	Interpreting exprns.	Interpreting the structure of expressions	F	F
+2,1,1,1	2,1,1	Exprn. context	Interpret expressions that represent a quantity in terms of its context.	F	T
+2,1,1,1,1	2,1,1,1	Exprn. components	Interpret parts of an expression, such as terms, factors, and coefficients.	F	T
+2,1,1,1,2	2,1,1,1	Exprn. decomposition	Interpret complicated expressions by viewing one or more of their parts as a single entity. For example, interpret P(1+r)n as the product of P and a factor not depending on P.	F	T
+2,1,1,2	2,1,1	Rewriting exprns.	Use the structure of an expression to identify ways to rewrite it. For example, see x4 – y4 as (x2)2 – (y2)2, thus recognizing it as a difference of squares that can be factored as (x2 – y2)(x2 + y2).	F	F
+2,1,2	2,1	Equivalent exprns.	Write expressions in equivalent forms to solve problems	F	F
+2,1,2,1	2,1,2	Familiar forms	Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression.	F	T
+2,1,2,1,1	2,1,2,1	Factored quadratic	Factor a quadratic expression to reveal the zeros of the function it defines.	F	T
+2,1,2,1,2	2,1,2,1	Complete the square	Complete the square in a quadratic expression to reveal the maximum or minimum value of the function it defines.	F	T
+2,1,2,1,3	2,1,2,1	Rewrite exponents	Use the properties of exponents to transform expressions for exponential functions. For example the expression 1.15t can be rewritten as (1.151/12)12t ≈ 1.01212t to reveal the approximate equivalent monthly interest rate if the annual rate is 15%.	F	T
+2,1,2,2	2,1,2	Geometric series	Derive the formula for the sum of a finite geometric series (when the common ratio is not 1), and use the formula to solve problems. For example, calculate mortgage payments.	F	T
+2,2	2	Working Rational Exprns.	Arithmetic with Polynomials and Rational Expressions	F	F
+2,2,1	2,2	Polynomial arithmetic	Perform arithmetic operations on polynomials	F	F
+2,2,1,1	2,2,1	Poly. in, poly. out	Understand that polynomials form a system analogous to the integers, namely, they are closed under the operations of addition, subtraction, and multiplication; add, subtract, and multiply polynomials.	F	F
+2,2,2	2,2	Zeros by factoring	Understand the relationship between zeros and factors of polynomials	F	F
+2,2,2,1	2,2,2	Remainder theorem.	Know and apply the Remainder Theorem: For a polynomial p(x) and a number a, the remainder on division by x – a is p(a), so p(a) = 0 if and only if (x – a) is a factor of p(x).	F	F
+2,2,2,2	2,2,2	Shape from zeros	Identify zeros of polynomials when suitable factorizations are available, and use the zeros to construct a rough graph of the function defined by the polynomial.	F	F
+2,2,3	2,2	Polynomial identities	Use polynomial identities to solve problems	F	F
+2,2,3,1	2,2,3	Identity implications	Prove polynomial identities and use them to describe numerical relationships. For example, the polynomial identity (x2 + y2)2 = (x2 – y2)2 + (2xy)2 can be used to generate Pythagorean triples.	F	F
+2,2,3,2	2,2,3	Binomial thm.	Know and apply the Binomial Theorem for the expansion of (x + y)n in powers of x and y for a positive integer n, where x and y are any numbers, with coefficients determined for example by Pascal’s Triangle. The Binomial Theorem can be proved by mathematical induction or by a combinatorial argument.	T	F
+2,2,4	2,2	Rewrite ratnl. exprns.	Rewrite rational expressions	F	F
+2,2,4,1	2,2,4	Ratnl. forms	Rewrite simple rational expressions in different forms; write a(x)/b(x) in the form q(x) + r(x)/b(x), where a(x), b(x), q(x), and r(x) are polynomials with the degree of r(x) less than the degree of b(x), using inspection, long division, or, for the more complicated examples, a computer algebra system.	F	F
+2,2,4,2	2,2,4	Ratnl. in, ratnl. out	Understand that rational expressions form a system analogous to the rational numbers, closed under addition, subtraction, multiplication, and division by a nonzero rational expression; add, subtract, multiply, and divide rational expressions.	T	F
+2,3	2	Creating equations	Creating equations	F	T
+2,3,1	2,3	Relationships	Create equations that describe numbers or relationships	F	T
+2,3,1,1	2,3,1	Single variable	Create equations and inequalities in one variable and use them to solve problems. Include equations arising from linear and quadratic functions, and simple rational and exponential functions.	F	T
+2,3,1,2	2,3,1	Multivariable	Create equations in two or more variables to represent relationships between quantities; graph equations on coordinate axes with labels and scales.	F	T
+2,3,1,3	2,3,1	Model constraints	Represent constraints by equations or inequalities, and by systems of equations and/or inequalities, and interpret solutions as viable or non- viable options in a modeling context. For example, represent inequalities describing nutritional and cost constraints on combinations of different foods.	F	T
+2,3,1,4	2,3,1	Rearrange for clarity	Rearrange formulas to highlight a quantity of interest, using the same reasoning as in solving equations. For example, rearrange Ohm’s law V = IR to highlight resistance R.	F	T
+2,4	2	Equation reasoning	Reasoning with Equations and Inequalities	F	F
+2,4,1	2,4	What’s "solving"?	Understand solving equations as a process of reasoning and explain the reasoning	F	F
+2,4,1,1	2,4,1	Solution steps	Explain each step in solving a simple equation as following from the equality of numbers asserted at the previous step, starting from the assumption that the original equation has a solution. Construct a viable argument to justify a solution method.	F	F
+2,4,1,2	2,4,1	Extraneous solutions	Solve simple rational and radical equations in one variable, and give examples showing how extraneous solutions may arise.	F	F
+2,4,2	2,4	Solve single variable	Solve equations and inequalities in one variable	F	F
+2,4,2,1	2,4,2	Linear	Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.	F	F
+2,4,2,2	2,4,2	Quadratic	Solve quadratic equations in one variable.	F	F
+2,4,2,2,1	2,4,2,2	Complete the square	Use the method of completing the square to transform any quadratic equation in x into an equation of the form (x – p)2 = q that has the same solutions. Derive the quadratic formula from this form.	F	F
+2,4,2,2,2	2,4,2,2	Options for solving	Solve quadratic equations by inspection (e.g., for x2 = 49), taking square roots, completing the square, the quadratic formula and factoring, as appropriate to the initial form of the equation. Recognize when the quadratic formula gives complex solutions and write them as a ± bi for real numbers a and b.	F	F
+2,4,3	2,4	Solve systems	Solve systems of equations	F	F
+2,4,3,1	2,4,3	Justify adding equations	Prove that, given a system of two equations in two variables, replacing one equation by the sum of that equation and a multiple of the other produces a system with the same solutions.	F	F
+2,4,3,2	2,4,3	Approximate solutions	Solve systems of linear equations exactly and approximately (e.g., with graphs), focusing on pairs of linear equations in two variables.	F	F
+2,4,3,3	2,4,3	Manipulate and visualize	Solve a simple system consisting of a linear equation and a quadratic equation in two variables algebraically and graphically. For example, find the points of intersection between the line y = –3x and the circle x2 + y2 = 3.	F	F
+2,4,3,4	2,4,3	Matrix form	Represent a system of linear equations as a single matrix equation in a vector variable.	T	F
+2,4,3,5	2,4,3	Matrix inverse	Find the inverse of a matrix if it exists and use it to solve systems of linear equations (using technology for matrices of dimension 3 × 3 or greater).	T	F
+2,4,4	2,4	Graphical solutions	Represent and solve equations and inequalities graphically	F	F
+2,4,4,1	2,4,4	Curves as solutions	Understand that the graph of an equation in two variables is the set of all its solutions plotted in the coordinate plane, often forming a curve (which could be a line).	F	F
+2,4,4,2	2,4,4	Curve intersections	Explain why the x-coordinates of the points where the graphs of the equations y = f(x) and y = g(x) intersect are the solutions of the equation f(x) = g(x); find the solutions approximately, e.g., using technology to graph the functions, make tables of values, or find successive approximations. Include cases where f(x) and/or g(x) are linear, polynomial, rational, absolute value, exponential, and logarithmic functions.	F	T
+2,4,4,3	2,4,4	Graph inequalities	Graph the solutions to a linear inequality in two variables as a half- plane (excluding the boundary in the case of a strict inequality), and graph the solution set to a system of linear inequalities in two variables as the intersection of the corresponding half-planes.	F	F
+3	root	Functions	Functions	F	F
+3,1	3	Interpreting functions	Interpreting Functions	F	F
+3,1,1	3,1	Concept and notation	Understand the concept of a function and use function notation	F	F
+3,1,1,1	3,1,1	Domain and range	Understand that a function from one set (called the domain) to another set (called the range) assigns to each element of the domain exactly one element of the range. If f is a function and x is an element of its domain, then f(x) denotes the output of f corresponding to the input x. The graph of f is the graph of the equation y = f(x).	F	F
+3,1,1,2	3,1,1	Evaluate functions	Use function notation, evaluate functions for inputs in their domains, and interpret statements that use function notation in terms of a context.	F	F
+3,1,1,3	3,1,1	Sequences	Recognize that sequences are functions, sometimes defined recursively, whose domain is a subset of the integers. For example, the Fibonacci sequence is defined recursively by f(0) = f(1) = 1, f(n+1) = f(n) + f(n-1) for n ≥ 1.	F	F
+3,1,2	3,1	Contextual meaning	Interpret functions that arise in applications in terms of the context	F	F
+3,1,2,1	3,1,2	Two variable relationships	For a function that models a relationship between two quantities, interpret key features of graphs and tables in terms of the quantities, and sketch graphs showing key features given a verbal description of the relationship. Key features include: intercepts; intervals where the function is increasing, decreasing, positive, or negative; relative maximums and minimums; symmetries; end behavior; and periodicity.	F	T
+3,1,2,2	3,1,2	Understand the domain	Relate the domain of a function to its graph and, where applicable, to the quantitative relationship it describes. For example, if the function h(n) gives the number of person-hours it takes to assemble n engines in a factory, then the positive integers would be an appropriate domain for the function.	F	T
+3,1,2,3	3,1,2	Rate of change	Calculate and interpret the average rate of change of a function (presented symbolically or as a table) over a specified interval. Estimate the rate of change from a graph.	F	T
+3,1,3	3,1	Representations	Analyze functions using different representations	F	F
+3,1,3,1	3,1,3	Graph functions	Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases.	F	T
+3,1,3,1,1	3,1,3,1	Linear and quadratic	Graph linear and quadratic functions and show intercepts, maxima, and minima.	F	F
+3,1,3,1,2	3,1,3,1	Inverse and piecewise	Graph square root, cube root, and piecewise-defined functions, including step functions and absolute value functions.	F	F
+3,1,3,1,3	3,1,3,1	Polynomial	Graph polynomial functions, identifying zeros when suitable factorizations are available, and showing end behavior.	F	F
+3,1,3,1,4	3,1,3,1	Rational	Graph rational functions, identifying zeros and asymptotes when suitable factorizations are available, and showing end behavior.	T	F
+3,1,3,1,5	3,1,3,1	Exp, log, and trig	Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude.	F	F
+3,1,3,2	3,1,3	Equivalent forms	Write a function defined by an expression in different but equivalent forms to reveal and explain different properties of the function.	F	F
+3,1,3,2,1	3,1,3,2	Factored forms	Use the process of factoring and completing the square in a quadratic function to show zeros, extreme values, and symmetry of the graph, and interpret these in terms of a context.	F	F
+3,1,3,2,2	3,1,3,2	Exponent meaning	Use the properties of exponents to interpret expressions for exponential functions. For example, identify percent rate of change in functions such as y = (1.02)t, y = (0.97)t, y = (1.01)12t, y = (1.2)t/10, and classify them as representing exponential growth or decay.	F	F
+3,1,3,3	3,1,3	Relate descriptions	Compare properties of two functions each represented in a different way (algebraically, graphically, numerically in tables, or by verbal descriptions). For example, given a graph of one quadratic function and an algebraic expression for another, say which has the larger maximum.	F	F
+3,2	3	Building functions	Building Functions	F	F
+3,2,1	3,2	Relate quantities	Build a function that models a relationship between two quantities	F	F
+3,2,1,1	3,2,1	Functional relationship	Write a function that describes a relationship between two quantities.	F	T
+3,2,1,1,1	3,2,1,1	Non-analytic functions	Determine an explicit expression, a recursive process, or steps for calculation from a context.	F	F
+3,2,1,1,2	3,2,1,1	Combine familiar functions	Combine standard function types using arithmetic operations. For example, build a function that models the temperature of a cooling body by adding a constant function to a decaying exponential, and relate these functions to the model.	F	F
+3,2,1,1,3	3,2,1,1	Function composition	Compose functions. For example, if T(y) is the temperature in  the atmosphere as a function of height, and h(t) is the height of a weather balloon as a function of time, then T(h(t)) is the temperature at the location of the weather balloon as a function of time.	T	F
+3,2,1,2	3,2,1	Sequences	Write arithmetic and geometric sequences both recursively and with an explicit formula, use them to model situations, and translate between the two forms.	F	T
+3,2,2	3,2	Function combinations	Build new functions from existing functions	F	F
+3,2,2,1	3,2,2	Effects of input/output changes	Identify the effect on the graph of replacing f(x) by f(x) + k, k f(x), f(kx), and f(x + k) for specific values of k (both positive and negative); find the value of k given the graphs. Experiment with cases and illustrate an explanation of the effects on the graph using technology. Include recognizing even and odd functions from their graphs and algebraic expressions for them.	F	F
+3,2,2,2	3,2,2	Inverse functions	Find inverse functions.	F	F
+3,2,2,2,1	3,2,2,2	Solve for inverse	Solve an equation of the form f(x) = c for a simple function f that has an inverse and write an expression for the inverse. For example, f(x) =2 x3 or f(x) = (x+1)/(x–1) for x ≠ 1.	F	F
+3,2,2,2,2	3,2,2,2	Verify inverse by composition	Verify by composition that one function is the inverse of another.	T	F
+3,2,2,2,3	3,2,2,2	Find inverse values	Read values of an inverse function from a graph or a table, given that the function has an inverse.	T	F
+3,2,2,2,4	3,2,2,2	Find invertible domain	Produce an invertible function from a non-invertible function by restricting the domain.	T	F
+3,2,2,3	3,2,2	Log as inverse of exp	Understand the inverse relationship between exponents and logarithms and use this relationship to solve problems involving logarithms and exponents.	T	F
+3,3	3	Lin, quad, exp models	Linear, Quadratic, and Exponential Models	F	T
+3,3,1	3,3	Construct and compare	Construct and compare linear, quadratic, and exponential models and solve problems	F	T
+3,3,1,1	3,3,1	Identify lin and exp phenomena	Distinguish between situations that can be modeled with linear functions and with exponential functions.	F	T
+3,3,1,1,1	3,3,1,1	Growth rates	Prove that linear functions grow by equal differences over equal intervals, and that exponential functions grow by equal factors over equal intervals.	F	T
+3,3,1,1,2	3,3,1,1	Identify constant growth rates	Recognize situations in which one quantity changes at a constant rate per unit interval relative to another.	F	T
+3,3,1,1,3	3,3,1,1	Identify exp growth rates	Recognize situations in which a quantity grows or decays by a constant percent rate per unit interval relative to another.	F	T
+3,3,1,2	3,3,1	Construct lin and exp functions	Construct linear and exponential functions, including arithmetic and geometric sequences, given a graph, a description of a relationship, or two input-output pairs (include reading these from a table).	F	T
+3,3,1,3	3,3,1	Growth bounds	Observe using graphs and tables that a quantity increasing exponentially eventually exceeds a quantity increasing linearly, quadratically, or (more generally) as a polynomial function.	F	T
+3,3,1,4	3,3,1	Log solves exp eqns	For exponential models, express as a logarithm the solution to abct = d where a, c, and d are numbers and the base b is 2, 10, or e; evaluate the logarithm using technology.	F	T
+3,3,2	3,3	Interpret model exprns	Interpret expressions for functions in terms of the situation they model	F	T
+3,3,2,1	3,3,2	Interpret parameters	Interpret the parameters in a linear or exponential function in terms of a context.	F	T
+3,4	3	Trig functions	Trigonometric Functions	F	F
+3,4,1	3,4	Unit circle domain	Extend the domain of trigonometric functions using the unit circle	F	F
+3,4,1,1	3,4,1	Radians	Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle.	F	F
+3,4,1,2	3,4,1	Extend trig domain	Explain how the unit circle in the coordinate plane enables the extension of trigonometric functions to all real numbers, interpreted as radian measures of angles traversed counterclockwise around the unit circle.	F	F
+3,4,1,3	3,4,1	Special triangles	Use special triangles to determine geometrically the values of sine, cosine, tangent for π/3, π/4 and π/6, and use the unit circle to express the values of sine, cosine, and tangent for π–x, π+x, and 2π–x in terms of their values for x, where x is any real number.	T	F
+3,4,1,4	3,4,1	Trig function symmetry	Use the unit circle to explain symmetry (odd and even) and periodicity of trigonometric functions.	T	F
+3,4,2	3,4	Periodic phenomena	Model periodic phenomena with trigonometric functions	F	F
+3,4,2,1	3,4,2	Choose trig funtions	Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.	F	T
+3,4,2,2	3,4,2	Invertible domain	Understand that restricting a trigonometric function to a domain on which it is always increasing or always decreasing allows its inverse to be constructed.	T	F
+3,4,2,3	3,4,2	Solving with inverses	Use inverse functions to solve trigonometric equations that arise in modeling contexts; evaluate the solutions using technology, and interpret them in terms of the context.	T	T
+3,4,3	3,4	Trig identities	Prove and apply trigonometric identities	F	F
+3,4,3,1	3,4,3	Pythagorean identity	Prove the Pythagorean identity sin2(θ) + cos2(θ) = 1 and use it to find sin(θ), cos(θ), or tan(θ) given sin(θ), cos(θ), or tan(θ) and the quadrant of the angle.	F	F
+3,4,3,2	3,4,3	Angle sum formulas	Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems.	T	F
+4	root	Geometry	Geometry 	F	F
+4,1	4	Congruence	Congruence	F	F
+4,1,1	4,1	Plane transformations	Experiment with transformations in the plane	F	F
+4,1,1,1	4,1,1	Geometric definitions	Know precise definitions of angle, circle, perpendicular line, parallel line, and line segment, based on the undefined notions of point, line, distance along a line, and distance around a circular arc. 	F	F
+4,1,1,2	4,1,1	Descriptions of transformations	Represent transformations in the plane using, e.g., transparencies and geometry software; describe transformations as functions that take points in the plane as inputs and give other points as outputs. Compare transformations that preserve distance and angle to those that do not (e.g., translation versus horizontal stretch). 	F	F
+4,1,1,3	4,1,1	Symmetry transformations	Given a rectangle, parallelogram, trapezoid, or regular polygon, describe the rotations and reflections that carry it onto itself. 	F	F
+4,1,1,4	4,1,1	Transformation definitions	Develop definitions of rotations, reflections, and translations in terms of angles, circles, perpendicular lines, parallel lines, and line segments. 	F	F
+4,1,1,5	4,1,1	Draw transformations	Given a geometric figure and a rotation, reflection, or translation, draw the transformed figure using, e.g., graph paper, tracing paper, or geometry software. Specify a sequence of transformations that will carry a given figure onto another.	F	F
+4,1,2	4,1	Congruence by transformation	Understand congruence in terms of rigid motions	F	F
+4,1,2,1	4,1,2	Transform to find congruence	Use geometric descriptions of rigid motions to transform figures and to predict the effect of a given rigid motion on a given figure; given two figures, use the definition of congruence in terms of rigid motions to decide if they are congruent. 	F	F
+4,1,2,2	4,1,2	Verify triangle congruence	Use the definition of congruence in terms of rigid motions to show that two triangles are congruent if and only if corresponding pairs of sides and corresponding pairs of angles are congruent.	F	F
+4,1,2,3	4,1,2	Justify ASA,SAS, SSS	Explain how the criteria for triangle congruence (ASA, SAS, and SSS) follow from the definition of congruence in terms of rigid motions.	F	F
+4,1,3	4,1	Prove geometry thms.	Prove geometric theorems	F	F
+4,1,3,1	4,1,3	Line and angle thms.	Prove theorems about lines and angles. Theorems include: vertical angles are congruent; when a transversal crosses parallel lines, alternate interior angles are congruent and corresponding angles are congruent; points on a perpendicular bisector of a line segment are exactly those equidistant from the segment’s endpoints.	F	F
+4,1,3,2	4,1,3	Triangle thms.	Prove theorems about triangles. Theorems include: measures of interior angles of a triangle sum to 180°; base angles of isosceles triangles are congruent; the segment joining midpoints of two sides of a triangle is parallel to the third side and half the length; the medians of a triangle meet at a point.	F	F
+4,1,3,3	4,1,3	Parallelogram thms.	Prove theorems about parallelograms. Theorems include: opposite sides are congruent, opposite angles are congruent, the diagonals of a parallelogram bisect each other, and conversely, rectangles are parallelograms with congruent diagonals.	F	F
+4,1,4	4,1	Geometric constructions	Make geometric constructions	F	F
+4,1,4,1	4,1,4	Compass and straightedge	Make formal geometric constructions with a variety of tools and methods (compass and straightedge, string, reflective devices, paper folding, dynamic geometric software, etc.). Copying a segment; copying an angle; bisecting a segment; bisecting an angle; constructing perpendicular lines, including the perpendicular bisector of a line segment; and constructing a line parallel to a given line through a point not on the line.	F	F
+4,1,4,2	4,1,4	Regular polygons	Construct an equilateral triangle, a square, and a regular hexagon inscribed in a circle.	F	F
+4,2,1	4,2	Similarity as transformations	Understand similarity in terms of similarity transformations	F	F
+4,2,1,1	4,2,1	Properties of dilation	Verify experimentally the properties of dilations given by a center and a scale factor	F	F
+4,2,1,1,1	4,2,1,1	Effects on lines	A dilation takes a line not passing through the center of the dilation to a parallel line, and leaves a line passing through the center unchanged.	F	F
+4,2,1,1,2	4,2,1,1	Effects on length	The dilation of a line segment is longer or shorter in the ratio given by the scale factor.	F	F
+4,2,1,2	4,2,1	Compare figures	Given two figures, use the definition of similarity in terms of similarity transformations to decide if they are similar; explain using similarity transformations the meaning of similarity for triangles as the equality of all corresponding pairs of angles and the proportionality of all corresponding pairs of sides.	F	F
+4,2,1,3	4,2,1	Verify AA criterion	Use the properties of similarity transformations to establish the AA criterion for two triangles to be similar.	F	F
+4,2,2	4,2	Similarity thms.	Prove theorems involving similarity	F	F
+4,2,2,1	4,2,2	Triangle thms.	Prove theorems about triangles. Theorems include: a line parallel to one side of a triangle divides the other two proportionally, and conversely; the Pythagorean Theorem proved using triangle similarity.	F	F
+4,2,2,2	4,2,2	Other shapes using triangles	Use congruence and similarity criteria for triangles to solve problems and to prove relationships in geometric figures.	F	F
+4,2,3	4,2	Use right triangles	Define trigonometric ratios and solve problems involving right triangles	F	F
+4,2,3,1	4,2,3	Legs and angles	Understand that by similarity, side ratios in right triangles are properties of the angles in the triangle, leading to definitions of trigonometric ratios for acute angles.	F	F
+4,2,3,2	4,2,3	Sin, cos of complementary angles	Explain and use the relationship between the sine and cosine of complementary angles.	F	F
+4,2,3,3	4,2,3	Methods to solve right triangles	Use trigonometric ratios and the Pythagorean Theorem to solve right triangles in applied problems.	F	T
+4,2,4	4,2	General triangles	Apply trigonometry to general triangles	F	F
+4,2,4,1	4,2,4	Area formula	Derive the formula A = 1/2 ab sin(C) for the area of a triangle by drawing an auxiliary line from a vertex perpendicular to the opposite side.	T	F
+4,2,4,2	4,2,4	Sin, cos laws	Prove the Laws of Sines and Cosines and use them to solve problems.	T	F
+4,2,4,3	4,2,4	Find unknown dimensions	Understand and apply the Law of Sines and the Law of Cosines to find unknown measurements in right and non-right triangles (e.g., surveying problems, resultant forces).	T	F
+4,3	4	Circles	Circles	F	F
+4,3,1	4,3	Circle thms.	Understand and apply theorems about circles	F	F
+4,3,1,1	4,3,1	All circles are similar	Prove that all circles are similar.	F	F
+4,3,1,2	4,3,1	Circle components	Identify and describe relationships among inscribed angles, radii, and chords. Include the relationship between central, inscribed, and circumscribed angles; inscribed angles on a diameter are right angles; the radius of a circle is perpendicular to the tangent where the radius intersects the circle.	F	F
+4,3,1,3	4,3,1	Inscribed circles	Construct the inscribed and circumscribed circles of a triangle, and prove properties of angles for a quadrilateral inscribed in a circle.	F	F
+4,3,1,4	4,3,1	Tangents to circles	Construct a tangent line from a point outside a given circle to the circle.	T	F
+4,3,2	4,3	Arc lengths and areas	Find arc lengths and areas of sectors of circles	F	F
+4,3,2,1	4,3,2	Derive arc length	Derive using similarity the fact that the length of the arc intercepted by an angle is proportional to the radius, and define the radian measure of the angle as the constant of proportionality; derive the formula for the area of a sector.	F	F
+4,4	4	Analytic geometry	Expressing Geometric Properties with Equations	F	F
+4,4,1	4,4	Conic sections	Translate between the geometric description and the equation for a conic section	F	F
+4,4,1,1	4,4,1	Equation for circle	Derive the equation of a circle of given center and radius using the Pythagorean Theorem; complete the square to find the center and radius of a circle given by an equation.	F	F
+4,4,1,2	4,4,1	Derive parabola equation	Derive the equation of a parabola given a focus and directrix.	F	F
+4,4,1,3	4,4,1	Derive ellipse equation	Derive the equations of ellipses and hyperbolas given the foci, using the fact that the sum or difference of distances from the foci is constant.	T	F
+4,4,2	4,4	Geometry using coordinates	Use coordinates to prove simple geometric theorems algebraically	F	F
+4,4,2,1	4,4,2	Prove thms. algebraically	Use coordinates to prove simple geometric theorems algebraically. For example, prove or disprove that a figure defined by four given points in the coordinate plane is a rectangle; prove or disprove that the point (1, √3) lies on the circle centered at the origin and containing the point (0, 2).	F	F
+4,4,2,2	4,4,2	Slope criteria	Prove the slope criteria for parallel and perpendicular lines and use them to solve geometric problems (e.g., find the equation of a line parallel or perpendicular to a given line that passes through a given point).	F	F
+4,4,2,3	4,4,2	Midpoints	Find the point on a directed line segment between two given points that partitions the segment in a given ratio.	F	F
+4,4,2,4	4,4,2	Polygon formulas	Use coordinates to compute perimeters of polygons and areas of triangles and rectangles, e.g., using the distance formula.	F	T
+4,5	4	Measurement and dimension	Geometric Measurement and Dimension	F	F
+4,5,1	4,5	Volume formulas	Explain volume formulas and use them to solve problems	F	F
+4,5,1,1	4,5,1	Common volumes	Give an informal argument for the formulas for the circumference of a circle, area of a circle, volume of a cylinder, pyramid, and cone. Use dissection arguments, Cavalieri’s principle, and informal limit arguments.	F	F
+4,5,1,2	4,5,1	Cavalieri’s principle	Give an informal argument using Cavalieri’s principle for the formulas for the volume of a sphere and other solid figures.	T	F
+4,5,1,3	4,5,1	Volume formula problems	Use volume formulas for cylinders, pyramids, cones, and spheres to solve problems.	F	T
+4,5,2	4,5	2D and 3D shapes	Visualize relationships between two-dimensional and three- dimensional objects	F	F
+4,5,2,1	4,5,2	Cross-sections and rotations	Identify the shapes of two-dimensional cross-sections of three- dimensional objects, and identify three-dimensional objects generated by rotations of two-dimensional objects.	F	F
+4,6	4	Geometric modeling	Modeling with Geometry	F	F
+4,6,1	4,6	Identify geometric situations	Apply geometric concepts in modeling situations	F	F
+4,6,1,1	4,6,1	Approximate complex shapes	Use geometric shapes, their measures, and their properties to describe objects (e.g., modeling a tree trunk or a human torso as a cylinder).	F	T
+4,6,1,2	4,6,1	Density	Apply concepts of density based on area and volume in modeling situations (e.g., persons per square mile, BTUs per cubic foot).	F	T
+4,6,1,3	4,6,1	Design problems	Apply geometric methods to solve design problems (e.g., designing an object or structure to satisfy physical constraints or minimize cost; working with typographic grid systems based on ratios).	F	T
+5	root	Statistics and probability	Statistics and Probability	F	T
+5,1	5	Categorical/quantitative data	Interpreting Categorical and Quantitative Data	F	T
+5,1,1	5,1	Data summaries	Summarize, represent, and interpret data on a single count or measurement variable	F	T
+5,1,1,1	5,1,1	Common plots	Represent data with plots on the real number line (dot plots, histograms, and box plots).	F	T
+5,1,1,2	5,1,1	Distribution shapes	Use statistics appropriate to the shape of the data distribution to compare center (median, mean) and spread (interquartile range, standard deviation) of two or more different data sets.	F	T
+5,1,1,3	5,1,1	Distribution interpretation	Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points (outliers).	F	T
+5,1,1,4	5,1,1	Mean and standard deviation	Use the mean and standard deviation of a data set to fit it to a normal distribution and to estimate population percentages. Recognize that there are data sets for which such a procedure is not appropriate.  Use calculators, spreadsheets, and tables to estimate areas under the normal curve.	F	T
+5,1,2	5,1	Bivariate data	Summarize, represent, and interpret data on two categorical and quantitative variables	F	T
+5,1,2,1	5,1,2	Frequency tables	Summarize categorical data for two categories in two-way frequency tables. Interpret relative frequencies in the context of the data (including joint, marginal, and conditional relative frequencies). Recognize possible associations and trends in the data.	F	T
+5,1,2,2	5,1,2	Scatter plots	Represent data on two quantitative variables on a scatter plot, and describe how the variables are related.	F	T
+5,1,2,2,1	5,1,2,2	Regression	Fit a function to the data; use functions fitted to data to solve problems in the context of the data. Use given functions or choose a function suggested by the context. Emphasize linear, quadratic, and exponential models.	F	T
+5,1,2,2,2	5,1,2,2	Assess regression fit	Informally assess the fit of a function by plotting and analyzing residuals.	F	T
+5,1,2,2,3	5,1,2,2	Fit linear functions	Fit a linear function for a scatter plot that suggests a linear association.	F	T
+5,1,3	5,1	Linear models	Interpret linear models	F	T
+5,1,3,1	5,1,3	Interpret function parameters	Interpret the slope (rate of change) and the intercept (constant term) of a linear model in the context of the data.	F	T
+5,1,3,2	5,1,3	Compute correlation coefficient	Compute (using technology) and interpret the correlation coefficient of a linear fit.	F	T
+5,1,3,3	5,1,3	Correlation vs. causation	Distinguish between correlation and causation.	F	T
+5,2	5	Statistical inferences	Making Inferences and Justifying Conclusions	F	T
+5,2,1	5,2	Stochastic processes	Understand and evaluate random processes underlying statistical experiments	F	T
+5,2,1,1	5,2,1	Sample to population inference	Understand statistics as a process for making inferences about population parameters based on a random sample from that population.	F	T
+5,2,1,2	5,2,1	Test models	Decide if a specified model is consistent with results from a given data-generating process, e.g., using simulation. For example, a model says a spinning coin falls heads up with probability 0.5. Would a result of 5 tails in a row cause you to question the model?	F	T
+5,2,2	5,2	Justify conclusions with experiment	Make inferences and justify conclusions from sample surveys, experiments, and observational studies	F	T
+5,2,2,1	5,2,2	Compare experiments	Recognize the purposes of and differences among sample surveys, experiments, and observational studies; explain how randomization relates to each.	F	T
+5,2,2,2	5,2,2	Estimate population parameters	Use data from a sample survey to estimate a population mean or proportion; develop a margin of error through the use of simulation models for random sampling.	F	T
+5,2,2,3	5,2,2	Significant differences	Use data from a randomized experiment to compare two treatments; use simulations to decide if differences between parameters are significant.	F	T
+5,2,2,4	5,2,2	Evaluate reports	Evaluate reports based on data.	F	T
+5,3	5	Probability fundamentals	Conditional Probability and the Rules of Probability	F	T
+5,3,1	5,3	Independent/conditional events	Understand independence and conditional probability and use them to interpret data	F	T
+5,3,1,1	5,3,1	Sample spaces	Describe events as subsets of a sample space (the set of outcomes) using characteristics (or categories) of the outcomes, or as unions, intersections, or complements of other events ("or," "and," "not").	F	T
+5,3,1,2	5,3,1	Define independence	Understand that two events A and B are independent if the probability of A and B occurring together is the product of their probabilities, and use this characterization to determine if they are independent.	F	T
+5,3,1,3	5,3,1	Conditional probability	Understand the conditional probability of A given B as P(A and B)/P(B), and interpret independence of A and B as saying that the conditional probability of A given B is the same as the probability  of A, and the conditional probability of B given A is the same as the probability of B.	F	T
+5,3,1,4	5,3,1	Two categorical variables	Construct and interpret two-way frequency tables of data when two categories are associated with each object being classified. Use the two-way table as a sample space to decide if events are independent and to approximate conditional probabilities. For example, collect data from a random sample of students in your school on their favorite subject among math, science, and English. Estimate the probability that a randomly selected student from your school will favor science given that the student is in tenth grade. Do the same for other subjects and compare the results.	F	T
+5,3,1,5	5,3,1	Bayes’ thm.	Recognize and explain the concepts of conditional probability and independence in everyday language and everyday situations. For example, compare the chance of having lung cancer if you are a smoker with the chance of being a smoker if you have lung cancer.	F	T
+5,3,2	5,3	Compound events	Use the rules of probability to compute probabilities of compound events in a uniform probability model	F	T
+5,3,2,1	5,3,2	Construct conditional probability	Find the conditional probability of A given B as the fraction of B’s outcomes that also belong to A, and interpret the answer in terms of the model.	F	T
+5,3,2,2	5,3,2	Event unions	Apply the Addition Rule, P(A or B) = P(A) + P(B) – P(A and B), and interpret the answer in terms of the model.	F	T
+5,3,2,3	5,3,2	Apply conditional probability	Apply the general Multiplication Rule in a uniform probability model, P(A and B) = P(A)P(B|A) = P(B)P(A|B), and interpret the answer in terms of the model.	T	T
+5,3,2,4	5,3,2	Permutation and combination	Use permutations and combinations to compute probabilities of compound events and solve problems.	T	T
+5,4	5	Deciding with uncertainty	Using Probability to Make Decisions	F	T
+5,4,1	5,4	Expected values	Calculate expected values and use them to solve problems	F	T
+5,4,1,1	5,4,1	Probability distributions	Define a random variable for a quantity of interest by assigning a numerical value to each event in a sample space; graph the corresponding probability distribution using the same graphical displays as for data distributions.	T	T
+5,4,1,2	5,4,1	Random variables	Calculate the expected value of a random variable; interpret it as the mean of the probability distribution.	T	T
+5,4,1,3	5,4,1	Calculate expected value	Develop a probability distribution for a random variable defined for a sample space in which theoretical probabilities can be calculated; find the expected value. For example, find the theoretical probability distribution for the number of correct answers obtained by guessing on all five questions of a multiple-choice test where each question has four choices, and find the expected grade under various grading schemes.	T	T
+5,4,1,4	5,4,1	Empirical distribution	Develop a probability distribution for a random variable defined  for a sample space in which probabilities are assigned empirically; find the expected value. For example, find a current data distribution on the number of TV sets per household in the United States, and calculate the expected number of sets per household. How many TV sets would you expect to find in 100 randomly selected households?	T	T
+5,4,2	5,4	Evaluate decisions	Use probability to evaluate outcomes of decisions	F	T
+5,4,2,1	5,4,2	Weigh outcomes by expected value	Weigh the possible outcomes of a decision by assigning probabilities to payoff values and finding expected values.	T	T
+5,4,2,1,1	5,4,2,1	Game outcomes	Find the expected payoff for a game of chance. For example, find the expected winnings from a state lottery ticket or a game at a fast- food restaurant.	F	T
+5,4,2,1,2	5,4,2,1	Compare strategies	Evaluate and compare strategies on the basis of expected values. For example, compare a high-deductible versus a low-deductible automobile insurance policy using various, but reasonable, chances of having a minor or a major accident.	F	T
+5,4,2,2	5,4,2	Fair decisions	Use probabilities to make fair decisions (e.g., drawing by lots, using a random number generator).	T	T
+5,4,2,3	5,4,2	Real-world strategies	Analyze decisions and strategies using probability concepts (e.g., product testing, medical testing, pulling a hockey goalie at the end of a game).	T	T
+1	root	Numbers	Number and quantity	F	F

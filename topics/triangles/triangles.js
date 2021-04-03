@@ -1,138 +1,135 @@
-// Create data: coordinates of start and end
-var legLength = 10; 
-
 window.onload = function(){
    // nav panel functions
    attachNavHandlers();
    
-   // the globe triangle graphic
-   drawGreatCircles(); 
-   drawSlider();
-   // byId("globe").onclick = drawGreatCircles;
-
+   var width; 
+   var height;
+   var projection;
+   var path;
+   var polyLegs;
+   
+   drawGlobe();
+   
+   d3.select("#legLength").on("change", function(event) {
+      let offset = byId("legLength").value; 
+      drawTriangle(path, offset, true);} 
+   ); 
 }; 
 
-function drawBlankMap() {
-   // The svg
-   var svg = d3.select("svg"),
-       width = +svg.attr("width"),
-       height = +svg.attr("height");
+function drawGlobe() {
+  // Adapted from code by Michael Keith posted Nov 22, 2019 at https://observablehq.com/@michael-keith/draggable-globe-in-d3 
+  
+  width = d3.select("#globe").node().getBoundingClientRect().width
+  height = 500
+  const sensitivity = 75
 
-   // Map and projection
-   var projection = d3.geoOrthographic()
-       .scale(width / 1.3 / Math.PI)
-       .translate([width / 2, height / 2])
+  projection = d3.geoOrthographic()
+     .scale(250)
+     .center([0, 0])
+     .rotate([0,-30])
+     .translate([width / 2, height / 2])
 
-   // Load external data and boot
-   d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson", function(data){
+  const initialScale = projection.scale()
+  path = d3.geoPath().projection(projection)
 
-       // Draw the map with multiple path elms
-       svg.append("g")
-           .selectAll("path")
-           .data(data.features)
-           .enter().append("path")
-               .attr("fill", "#69b3a2")
-               .attr("d", d3.geoPath()
-                  .projection(projection)
-               )
-               .style("stroke", "#fff")
-               
-      // Draw the map with a single elm
-      /* svg.selectAll("path")
-         .data(data.features)
-         .enter().append("path")
-         .attr("d", d3.geoPath().projection(projection));  */
-   })
-}
+  let svg = d3.select("#globe")
+     .append("svg")
+     .attr("width", width)
+     .attr("height", height)
 
-function drawGreatCircles() {
-   // The svg
-   var svg = d3.select("svg"),
-       width = +svg.attr("width"),
-       height = +svg.attr("height");
+  let globe = svg.append("circle")
+     .attr("fill", "#EEE")
+     .attr("stroke", "#000")
+     .attr("stroke-width", "0.2")
+     .attr("cx", width/2)
+     .attr("cy", height/2)
+     .attr("r", initialScale)
 
-   // Map and projection
-   var projection = d3.geoOrthographic()
-      // original translate factor width / 1.3
-      .scale(width / 1 / Math.PI)
-      .translate([width / 2, height / 2])
-       /* original with this function, too small
-       .scale(85)
-       .translate([width/2, height/2*1.3]) */
+   svg.call(d3.drag().on('drag', (event) => {
+    const rotate = projection.rotate()
+    const k = sensitivity / projection.scale()
+    projection.rotate([
+      rotate[0] + event.dx * k,
+      rotate[1] - event.dy * k
+    ])
+    path = d3.geoPath().projection(projection)
+    svg.selectAll("path").attr("d", path)
+   }))
+   .call(d3.zoom().on('zoom', (event) => {
+    if(event.transform.k > 0.3) {
+      projection.scale(initialScale * event.transform.k)
+      path = d3.geoPath().projection(projection)
+      svg.selectAll("path").attr("d", path)
+      globe.attr("r", projection.scale())
+    }
+    else {
+      event.transform.k = 0.3
+    }
+  }))
+
+  let map = svg.append("g")
+
+  d3.json("https://raw.githubusercontent.com/michael-keith/mps_interests/master/view/js/charts/data/world_map.json").then(function(d) {
+    map.append("g")
+      .attr("class", "countries" )
+      .selectAll("path")
+      .data(d.features)
+      .enter().append("path")
+      .attr("class", d => "country_" + d.properties.name.replace(" ","_"))
+      .attr("d", path)
+      .attr("fill", "white")
+      .style('stroke', 'black')
+      .style('stroke-width', 0.3)
+      .style("opacity",0.8)
+      
+      console.log(d);
+  })
+
+   svg.append("g")
+      .classed("triangle", true)
    
-   var link = [{type: "LineString", coordinates: [[0, 0], [0, legLength]]},
-      {type: "LineString", coordinates: [[0, 0], [legLength, 0]]},
-      {type: "LineString", coordinates: [[0, legLength], [legLength, 0]]}
-   ]; 
-   // Change these data to see ho the great circle reacts
-
-   // A path generator
-   var path = d3.geoPath()
-       .projection(projection)
-
-   // Load world shape
-   d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson", function(data){
-
-       // Draw the map
-       svg.append("g")
-           .selectAll("path")
-           .data(data.features)
-           .enter().append("path")
-               .attr("fill", "#b8b8b8")
-               .attr("d", d3.geoPath()
-                   .projection(projection)
-               )
-               .style("stroke", "#fff")
-               .style("stroke-width", 0)
-               
-      svg.selectAll("myPath")
-         .data(link)
-         .enter()
-         .append("path")
-           .attr("d", function(d){ return path(d)})
-           .style("fill", "none")
-           .style("stroke", "blue")
-           .style("stroke-width", 4)
-
-
-       // Add single path (change link from array to single object)
-      /*  svg.append("path")
-         .attr("d", path(link))
-         .style("fill", "none")
-         .style("stroke", "orange")
-         .style("stroke-width", 7) */
-
-   })
+   drawTriangle(path, 90, false);
 }
 
-function drawSlider(){
-   var data = [1, 10, 40, 60, 90];
+function drawTriangle(path, offsetString, clear = true) {
+   let offset = parseInt(offsetString); 
+   if (offset % 360 == 0) {
+      alert("This triangle is just a point and will not render.  Try another value.");
+   } else if (offset % 180 == 0) {
+      alert("The points of this triple lie on opposite poles; cannot draw a triangle.  Try another value.");
+   }
+   
+   polyLegs = [{"type":"Feature","properties":{"name":"Triangle"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[0,offset],[offset,0],[0,0]]]},"id":"Triangle"}];   
+   path = d3.geoPath().projection(projection)
+   
+   var triangle = d3.select("g.triangle").selectAll("path").data(polyLegs)
+      .join("path").attr("d", path)
+      .attr("fill", "#F9894855")
+      .attr("stroke", "#F98948")
+      .attr("stroke-width", 2);
+   // The join syntax is a more concise implementation of the two lines below.  The triangle variable stores the update selection, ie existing objects.  The enter line adds the original triangle for the entered data.  The attr line updates the data using the path function. Join accounts for all of this.
+   // triangle.enter().append("path").attr("fill", "purple").attr("d", path);
+   // triangle.attr("d", path);
+   
+   // Update the image title with the new angle sum
+   angleSum(offset);
+}
 
-   var sliderSimple = d3
-    .sliderBottom()
-    .min(d3.min(data))
-    .max(d3.max(data))
-    .width(300)
-    .tickFormat(d3.format('.2%'))
-    .ticks(5)
-    .default(0.015)
-    .on('onchange', val => {
-      d3.select('p#value-simple').text(d3.format('.2%')(val));
-      legLength = val; 
-    });
-
-   var gSimple = d3
-    .select('div#globe')
-    .append('svg')
-    .attr('width', 500)
-    .attr('height', 100)
-    .append('g')
-    .attr('transform', 'translate(30,30)');
-
-   gSimple.call(sliderSimple);
-
-   d3.select('p#value-simple').text(d3.format('.2%')(sliderSimple.value()));
+function angleSum(offset) {
+   // Offset gives the longitude of the endpoint of the leg on the equator, which is equal to the latitutude of the endpoint of the leg on the prime meridian. 
+   // The spherical law of cosines for interior angles (angle of lines drawn from the sphere center to the leg endpoints) 
+   // a,b,c opposite surface angles α,β,γ is: cos(b) = cos(c)cos(a) = sin(c)sin(a)cos(β)
+   // Hence the surface angles α=β (with γ=90) in terms of offset=a=b are:
+   // β(b) = acos((1 - cos ** 2(b)) / (sin(acos(cos ** 2(b)))tan(b))) 
+   // = acot((1 - Math.cos(b) ** 2) / (Math.sin(b) * Math.tan(b))) = acot(Math.cos(b))
+   
+   offset *= Math.PI / 180;
+   acot = (x => Math.PI / 2 - Math.atan(x));
+   radians = acot(Math.cos(offset));
+   degrees = (180 / Math.PI) * radians;
+   sum = 90 + 2 * degrees;
+   d3.select("#angleSum").text(sum.toFixed(2));
 }
 
 // Save time with most common DOM get
-function byId(id) { return document.getElementById(id); }
+function byId(id) { return document.getElementById(id); }3

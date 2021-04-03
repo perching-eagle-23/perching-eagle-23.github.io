@@ -16,13 +16,13 @@
                      "./triangles",
                      'Why Triangles?',
                      'The motivation for studying the geometry of triangles and the behavior of trigonometric functions.'
-                  ],
-                  [
-                     "./logic",
-                     'Logic and Proof', 
-                     "Why can't we divide by zero?  How does symbol manipulation perform computation and describe geometries? An explanation of what's under the hood of the math we've been doing so far."
-                  ]         
-               ];
+                  ]];
+                  // [
+                     // "./logic",
+                     // 'Logic and Proof', 
+                     // "Why can't we divide by zero?  How does symbol manipulation perform computation and describe geometries? An explanation of what's under the hood of the math we've been doing so far."
+                  // ]         
+               // ];
                
             foreach ($topics as $topic) {
                ?>

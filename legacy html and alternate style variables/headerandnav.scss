@@ -1,0 +1,77 @@
+@use 'variables'; 
+
+/* Header */
+
+.header {
+   text-align: center;
+   color: variables.$text_highlight_1;
+   background-color: variables.$background_highlight_1; 
+   padding: 0px; 
+   margin: 0px; 
+}
+
+.header a {
+   color: variables.$text_highlight_1; 
+   text-decoration: none;
+}
+
+.header__navicon {
+   width: 4rem;
+   height: 4rem;
+   position: absolute; 
+   left: 10px; 
+   top: 10px; 
+   background-image: url(icons/nav2.svg); 
+   background-repeat: no-repeat;
+   background-position: center; 
+   vertical-align: middle;
+}
+
+.pagetitle {
+   margin-top: 0px; 
+   padding-top: 30px;
+   padding-bottom: 30px; 
+   font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+   .header__navicon{
+      position: static;
+   }
+}
+
+/* Sidenav */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: variables.$sidebar_background;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: variables.$sidebar_text; 
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: variables.$sidebar_text_hover;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}

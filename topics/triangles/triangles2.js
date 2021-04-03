@@ -11,17 +11,14 @@ window.onload = function(){
    drawGlobe();
    
    d3.select("#legLength").on("change", function(event) {
-      // These, plus .innerText and .innerHtml versions, are all returning undefined. 
-      // console.log(d3.select(this).value);
-      // console.log(d3.select("#legLength").text()); 
-      
-      console.log(document.getElementById("legLength").value);
       let offset = byId("legLength").value; 
       drawTriangle(path, offset, true);} 
    ); 
 }; 
 
 function drawGlobe() {
+  // Adapted from code by Michael Keith posted Nov 22, 2019 at https://observablehq.com/@michael-keith/draggable-globe-in-d3 
+  
   width = d3.select("#globe").node().getBoundingClientRect().width
   height = 500
   const sensitivity = 75
@@ -87,19 +84,9 @@ function drawGlobe() {
       
       console.log(d);
   })
-   
-  // let offset = 90; 
-  // let polyLegs = [{"type":"Feature","properties":{"name":"Triangle"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[0,offset],[offset,0],[0,0]]]},"id":"Triangle"}];
-   
+
    svg.append("g")
       .classed("triangle", true)
-      // .selectAll("path")
-      // .data(polyLegs)
-      // .enter().append("path")
-      // .attr("d", path)
-      // .attr("fill", "none")
-      // .attr("stroke", "blue")
-      // .attr("stroke-width", 3)
    
    drawTriangle(path, 90, false);
 }
@@ -111,19 +98,20 @@ function drawTriangle(path, offsetString, clear = true) {
    } else if (offset % 180 == 0) {
       alert("The points of this triple lie on opposite poles; cannot draw a triangle.  Try another value.");
    }
-   polyLegs = [{"type":"Feature","properties":{"name":"Triangle"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[0,offset],[offset,0],[0,0]]]},"id":"Triangle"}];
    
+   polyLegs = [{"type":"Feature","properties":{"name":"Triangle"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[0,offset],[offset,0],[0,0]]]},"id":"Triangle"}];   
    path = d3.geoPath().projection(projection)
    
    var triangle = d3.select("g.triangle").selectAll("path").data(polyLegs)
       .join("path").attr("d", path)
-      .attr("fill", "purple")
-      .attr("stroke", "blue")
-      .attr("stroke-width", 3);
-   // The join syntax is a more concise implementation of these two lines.  The triangle variable stores the update selection, ie existing objects.  The enter line adds the original triangle for the entered data.  The attr line updates the data using the path function. 
+      .attr("fill", "#F9894855")
+      .attr("stroke", "#F98948")
+      .attr("stroke-width", 2);
+   // The join syntax is a more concise implementation of the two lines below.  The triangle variable stores the update selection, ie existing objects.  The enter line adds the original triangle for the entered data.  The attr line updates the data using the path function. Join accounts for all of this.
    // triangle.enter().append("path").attr("fill", "purple").attr("d", path);
    // triangle.attr("d", path);
-      
+   
+   // Update the image title with the new angle sum
    angleSum(offset);
 }
 
@@ -144,4 +132,4 @@ function angleSum(offset) {
 }
 
 // Save time with most common DOM get
-function byId(id) { return document.getElementById(id); }
+function byId(id) { return document.getElementById(id); }3

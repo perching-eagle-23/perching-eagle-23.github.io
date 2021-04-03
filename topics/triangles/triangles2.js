@@ -6,14 +6,14 @@ window.onload = function(){
    var height;
    var projection;
    var path;
-   // var polyLegs = [{"type":"Feature","properties":{"name":"Triangle"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[0,90],[90,0],[0,0]]]},"id":"Triangle"}];
+   var polyLegs;
    
    drawGlobe();
    
    d3.select("#legLength").on("change", function(event) {
       // These, plus .innerText and .innerHtml versions, are all returning undefined. 
-      //console.log(d3.select(this).value);
-      //console.log(d3.select("#legLength").value); 
+      // console.log(d3.select(this).value);
+      // console.log(d3.select("#legLength").text()); 
       
       console.log(document.getElementById("legLength").value);
       let offset = byId("legLength").value; 
@@ -111,28 +111,20 @@ function drawTriangle(path, offsetString, clear = true) {
    } else if (offset % 180 == 0) {
       alert("The points of this triple lie on opposite poles; cannot draw a triangle.  Try another value.");
    }
-   let polyLegs = [{"type":"Feature","properties":{"name":"Triangle"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[0,offset],[offset,0],[0,0]]]},"id":"Triangle"}];
+   polyLegs = [{"type":"Feature","properties":{"name":"Triangle"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[0,offset],[offset,0],[0,0]]]},"id":"Triangle"}];
    
-   // polyLegs["geometry"]["coordinates"] = [[[0,0],[0,offset],[offset,0],[0,0]]];
+   path = d3.geoPath().projection(projection)
    
-   // if (clear) {
-      // d3.select("g.triangle")
-         // .selectAll("*")
-         // .remove()         
-   // }
-   
-   d3.select("g.triangle")
-      .selectAll("path")
-      .data(polyLegs)
-      .join("path")
-      // .enter().append("path")
-      .attr("d", path)
-      .attr("fill", "none")
+   var triangle = d3.select("g.triangle").selectAll("path").data(polyLegs)
+      .join("path").attr("d", path)
+      .attr("fill", "purple")
       .attr("stroke", "blue")
-      .attr("stroke-width", 3)
+      .attr("stroke-width", 3);
+   // The join syntax is a more concise implementation of these two lines.  The triangle variable stores the update selection, ie existing objects.  The enter line adds the original triangle for the entered data.  The attr line updates the data using the path function. 
+   // triangle.enter().append("path").attr("fill", "purple").attr("d", path);
+   // triangle.attr("d", path);
       
    angleSum(offset);
-   console.log(angleSum(offset));
 }
 
 function angleSum(offset) {
@@ -148,9 +140,7 @@ function angleSum(offset) {
    radians = acot(Math.cos(offset));
    degrees = (180 / Math.PI) * radians;
    sum = 90 + 2 * degrees;
-   
    d3.select("#angleSum").text(sum.toFixed(2));
-   console.log(typeof sum);
 }
 
 // Save time with most common DOM get

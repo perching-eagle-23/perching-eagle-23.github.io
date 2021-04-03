@@ -21,32 +21,29 @@
          <p>Here is an unusual "triangle".  It has three right angles, for an angle sum of \( 270^{\circ} \).</p>
  
          <div class="figure">
-            <h3 class="figure__title">\(\angle{a} + \angle{b} + \angle{c} = ?\)</h3>
+            <h3 class="figure__title">\(\angle{a} + \angle{b} + \angle{c} = \)<span id="angleSum"></span>&deg</h3>
             <div id="globe" class="figure__image"></div>
-            <!--
-            <form action="" id="entry">
-               <input type="text" id="legLength">
-               <input type="submit" />
-            </form>
-            -->
-            <input type="text" id="legLength" />
-            <p class="figure__label">The legs which meet off the coast of Ghana have the same length and are fixed at a right angle.  Their length is changed with the slider, and the "hypotenuse" moves with them.  The world map is there just to provide you familiar reference points so the sphere's geometry is more intuitive.
-            <!--
-            <br/>
-            Although it is not the point of this article, this figure also illustrates how any two "straight lines" - great circles, in this case - on the sphere meet at two points.  This is an alternative to Euclid's <a href="https://en.wikipedia.org/wiki/Parallel_postulate" target="_blank">fifth postulate</a> regarding the notion "parallel", which is a very important part of the story of geometry, and of the development of non-euclidian geometries in recent centuries, which in turn enabled the development of relativity.-->
+            <div style="text-align:center;">
+               <input type="text" id="legLength"/>
+            </div>
+            <p class="figure__label">The legs which meet off the coast of Ghana have the same length and are fixed at a right angle (the world map is just there to make the sphere's geometry intuitive).  Change their length by entering an integer representing the longitude of the equator leg's endpoint, and the "hypotenuse" will move with them.  Notice that for small leg lengths, the angle sum approaches the 180&deg that we're familiar with; this is what is meant by saying a sphere is "locally flat".
             </p>
          </div>
          
-         <p>Clearly, this is not quite a triangle in the sense in which we've defined it so far. <span class="definition">Triangle \( :=  \) A polygon composed of three line segments connecting any three points in the plane which are not colinear.</span> Here's a broader definition.  <span class="definition">Triangle-y thing \( :=  \) A shape composed of the three shortest paths in a space between any three points in that space which are not on a the same path.</span>  (If you want to look more into it the shortest path on a surface is called a  <em>geodesic.</em>)</p>
+         <p>Clearly, this is not quite a triangle in the sense in which we've defined it so far. <span class="definition">Triangle \( :=  \) A polygon composed of three line segments connecting any three points in the plane which are not colinear.</span> Here's a broader definition.  <span class="definition">Triangle-y thing \( :=  \) A shape composed of the three shortest paths in a space between any three points in that space which are not on a the same path.</span>  (If you want to look more into it the shortest path on a surface is called a  <em>geodesic,</em> and on a sphere the geodesics are called great circles.  This is why, if you are used to the Mercator projection, you may be surprised to travel so near the Artic on a flight from New York to London.)</p>
          
          <p>You know that if a surface is flat, the angle sum of a triangle is \(180^{\circ}\). The <!-- BUILD FLAG : popup definition --> <a href="">contrapositive</a> is more interesting: if the angle sum of a triangle is not \(180^{\circ}\), it is on a curved surface.</p>
          
          <p>Why should we care about spaces that are flat (Euclidean spaces)?  Because they're easier.</p>
          
-         <p>
-            <img src="https://research.umn.edu/sites/research.umn.edu/files/ligo-hanford-aerial-02-blog.jpg" alt="Hanford LIGO Detector" style="width:30%; float:right;">
-            <div class="keep_left" style="width: 65%;">Why should we care about spaces that are not flat?  Because not all physical geometries are actually flat. For example, when one is walking along a geodesic on Earth's surface, one cannot tell that it is not a flat line without travelling quite some distance: but, over long distances, failing to account for this will cause issues. Here is the LIGO detector at Hanford, a double example of this. It measures the warping, by gravitational waves, of 3D space away from its usual flatness.  In order to do so, it needs long, straight arms at right angles; and, in order to build them with sufficient accuracy, its designers needed to account for the curvature of Earth.
+          <p>
+            <div class="inline_figure">
+               <img src="https://research.umn.edu/sites/research.umn.edu/files/ligo-hanford-aerial-02-blog.jpg" alt="Hanford LIGO Detector">
+               <p class="figure__label">The LIGO detector in Hanford, WA. Accessed <a href="https://research.umn.edu/sites/research.umn.edu/files/ligo-hanford-aerial-02-blog.jpg" target="_blank">here</a> March 2021.</p>
             </div>
+           
+         <p>
+            Why should we care about spaces that are not flat?  Because not all physical geometries are actually flat. For example, when one is walking along a geodesic on Earth's surface, one cannot tell that it is not a flat line without travelling quite some distance: but, over long distances, failing to account for this will cause issues. Here is the LIGO detector at Hanford, a double example of this. It measures the warping, by gravitational waves, of 3D space away from its usual flatness.  In order to do so, it needs long, straight arms at right angles; and, in order to build them with sufficient accuracy, its designers needed to account for the curvature of Earth.
          </p>
       </div>
       

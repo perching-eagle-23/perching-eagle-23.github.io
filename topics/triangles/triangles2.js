@@ -6,6 +6,7 @@ window.onload = function(){
    var height;
    var projection;
    var path;
+   // var polyLegs = [{"type":"Feature","properties":{"name":"Triangle"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[0,90],[90,0],[0,0]]]},"id":"Triangle"}];
    
    drawGlobe();
    
@@ -112,6 +113,8 @@ function drawTriangle(path, offsetString, clear = true) {
    }
    let polyLegs = [{"type":"Feature","properties":{"name":"Triangle"},"geometry":{"type":"Polygon","coordinates":[[[0,0],[0,offset],[offset,0],[0,0]]]},"id":"Triangle"}];
    
+   // polyLegs["geometry"]["coordinates"] = [[[0,0],[0,offset],[offset,0],[0,0]]];
+   
    // if (clear) {
       // d3.select("g.triangle")
          // .selectAll("*")
@@ -121,11 +124,33 @@ function drawTriangle(path, offsetString, clear = true) {
    d3.select("g.triangle")
       .selectAll("path")
       .data(polyLegs)
-      .enter().append("path")
+      .join("path")
+      // .enter().append("path")
       .attr("d", path)
       .attr("fill", "none")
       .attr("stroke", "blue")
       .attr("stroke-width", 3)
+      
+   angleSum(offset);
+   console.log(angleSum(offset));
+}
+
+function angleSum(offset) {
+   // Offset gives the longitude of the endpoint of the leg on the equator, which is equal to the latitutude of the endpoint of the leg on the prime meridian. 
+   // The spherical law of cosines for interior angles (angle of lines drawn from the sphere center to the leg endpoints) 
+   // a,b,c opposite surface angles α,β,γ is: cos(b) = cos(c)cos(a) = sin(c)sin(a)cos(β)
+   // Hence the surface angles α=β (with γ=90) in terms of offset=a=b are:
+   // β(b) = acos((1 - cos ** 2(b)) / (sin(acos(cos ** 2(b)))tan(b))) 
+   // = acot((1 - Math.cos(b) ** 2) / (Math.sin(b) * Math.tan(b))) = acot(Math.cos(b))
+   
+   offset *= Math.PI / 180;
+   acot = (x => Math.PI / 2 - Math.atan(x));
+   radians = acot(Math.cos(offset));
+   degrees = (180 / Math.PI) * radians;
+   sum = 90 + 2 * degrees;
+   
+   d3.select("#angleSum").text(sum.toFixed(2));
+   console.log(typeof sum);
 }
 
 // Save time with most common DOM get

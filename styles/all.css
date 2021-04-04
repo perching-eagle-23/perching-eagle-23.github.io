@@ -209,7 +209,7 @@ ul.definition {
   margin-left: 5px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .figure {
     margin-left: -10%;
     margin-right: -10%;

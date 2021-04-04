@@ -1,6 +1,7 @@
 <?php 
    //echo realpath(''); 
-   $root = "http://localhost/learn/room202/persistence";
+   // $root = "http://localhost/learn/room202/persistence";
+   $root = "https://perching-eagle-23.github.io/";
 ?>
 
 <!doctype html>
@@ -24,7 +25,7 @@
    <div class="header">
       <div class="header__navicon"></div>
       <h1 class="pagetitle">
-         <a href="http://localhost/learn/persistence/math/main">
+         <a href="<?= $root ?>">
             <?= $pagetitle ?>
          </a>
       </h1>

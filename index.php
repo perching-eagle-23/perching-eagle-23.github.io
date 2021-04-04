@@ -2,7 +2,7 @@
       $root = "https://perching-eagle-23.github.io/";
       $pagetitle = 'Room 202 Math'; 
       $pagescripts = "<!-- The collapsible tree functionality -->
-         <script defer src='" . $root . "/templates/collapsible.js' type='text/javascript'></script>";
+         <script defer src='" . $root . "templates/collapsible.js' type='text/javascript'></script>";
       include("templates/head.php"); 
    ?>
    

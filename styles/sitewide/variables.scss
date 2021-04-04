@@ -41,7 +41,7 @@ $title_font: "Gentium";
 @font-face {
    font-family: $title_font; 
    /* src: url("fonts/genbasb.ttf");  */
-   src: url("https://perching-eagle-23.github.io/styles/fonts/genbasb.ttf");  
+   src: url("https://perching-eagle-23.github.io/styles/fonts/GenBasB.ttf");  
 }
 
 @font-face {
@@ -49,5 +49,5 @@ $title_font: "Gentium";
    /* multiple formats for browser compatibility */
    src: url("https://perching-eagle-23.github.io/styles/fonts/cmbright/cmunbmr.woff") format('woff'), 
       url("https://perching-eagle-23.github.io/styles/fonts/cmbright/cmunbmr.eot") format('eot'),
-      url("https://perching-eagle-23.github.io/fonts/styles/cmbright/cmunbmr.ttf") format('ttf'); 
+      url("https://perching-eagle-23.github.io/styles/fonts/cmbright/cmunbmr.ttf") format('ttf'); 
 }

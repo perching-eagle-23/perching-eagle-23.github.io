@@ -3,12 +3,13 @@
 
 
  <?php 
+      $root = "https://perching-eagle-23.github.io/";
       $pagescripts = "<!-- MathJax --> 
          <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>
          <script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
-         <script defer src='triangles.js' type='text/javascript'></script>";
-      $pagetitle = 'Topics / Triangles'; 
-      include("../../templates/head.php"); 
+         <script defer src='" . $root . "topics/triangles/triangles.js' type='text/javascript'></script>";
+      $pagetitle = 'Topics / Triangles';
+      include("../../templates/head.php");
    ?>
    
    <div class="midsection">

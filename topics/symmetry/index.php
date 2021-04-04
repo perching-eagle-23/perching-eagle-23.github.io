@@ -1,9 +1,10 @@
  <?php 
+      $root = "https://perching-eagle-23.github.io/";
       $pagetitle = 'Topics / Symmetry'; 
       $pagescripts = "<!-- MathJax --> 
          <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>
          <script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
-         <script defer src='symmetry.js' type='text/javascript'></script>"; 
+         <script defer src='" . $root . "topics/symmetry/symmetry.js' type='text/javascript'></script>"; 
       include("../../templates/head.php"); 
    ?>
    

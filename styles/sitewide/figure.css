@@ -8,12 +8,12 @@
 @font-face {
   font-family: "Gentium";
   /* src: url("fonts/genbasb.ttf");  */
-  src: url("https://perching-eagle-23.github.io/styles/fonts/genbasb.ttf");
+  src: url("https://perching-eagle-23.github.io/styles/fonts/GenBasB.ttf");
 }
 @font-face {
   font-family: "Computer Modern Bright";
   /* multiple formats for browser compatibility */
-  src: url("https://perching-eagle-23.github.io/styles/fonts/cmbright/cmunbmr.woff") format("woff"), url("https://perching-eagle-23.github.io/styles/fonts/cmbright/cmunbmr.eot") format("eot"), url("https://perching-eagle-23.github.io/fonts/styles/cmbright/cmunbmr.ttf") format("ttf");
+  src: url("https://perching-eagle-23.github.io/styles/fonts/cmbright/cmunbmr.woff") format("woff"), url("https://perching-eagle-23.github.io/styles/fonts/cmbright/cmunbmr.eot") format("eot"), url("https://perching-eagle-23.github.io/styles/fonts/cmbright/cmunbmr.ttf") format("ttf");
 }
 .figure {
   border: 1px solid #F09D51;

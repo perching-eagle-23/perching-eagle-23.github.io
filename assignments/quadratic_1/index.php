@@ -1,8 +1,9 @@
    <?php 
+      $root = "https://perching-eagle-23.github.io/";
       $pagescripts = "<!-- MathJax --> 
          <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>
          <script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
-         <script defer src='quad_1.js' type='text/javascript'></script>"; 
+         <script defer src='" . $root . "assignments/quadratic_1/quad_1.js' type='text/javascript'></script>"; 
       $pagetitle = 'Assignments / Quadratic Equations 1'; 
       include("../../templates/head.php"); 
    ?>

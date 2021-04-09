@@ -1,5 +1,5 @@
  <?php 
-      $root = "https://perching-eagle-23.github.io/";
+      $root = "https://room202math.github.io/";
       $pagetitle = 'Topics / Symmetry'; 
       $pagescripts = "<!-- MathJax --> 
          <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>

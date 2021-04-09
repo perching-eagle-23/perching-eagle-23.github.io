@@ -1,5 +1,5 @@
    <?php 
-      $root = "https://perching-eagle-23.github.io/";
+      $root = "https://room202math.github.io/";
       $pagetitle = 'Room 202 Math'; 
       $pagescripts = "<!-- The collapsible tree functionality -->
          <script defer src='" . $root . "templates/collapsible.js' type='text/javascript'></script>";

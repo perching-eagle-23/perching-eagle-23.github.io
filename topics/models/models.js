@@ -33,10 +33,15 @@ function Die() {
 }
 
 function drawGraphic() {
-   var width = "600"; 
-   var height = "500"; 
+   var width = "900"; 
+   var height = "500";
+   var barwidth = 35;
+   var pairwidth = 100;
+   var betweenwidth = 10; 
+   var afterwidth = 20; 
    
-   var counts = [1,1,1,1,1,1]; 
+   
+   var counts = [1/6, 1/6, 1/6, 1/6, 1/6, 1/6]; 
    var heightScale = d3.scaleLinear()
       .domain([0, 1])
       .range([0, height - 20]); 
@@ -48,22 +53,26 @@ function drawGraphic() {
       .attr("transform", "translate(100,10)")
       .classed("uniform", true);
    svg.append('g')
-      .attr("transform", "translate(100,10)")
+      .attr("transform", "translate(" + (100 + barwidth + betweenwidth) + ",10)")
       .classed("actual", true);
    
    d3.select(".uniform").selectAll("rect")
       .data(counts)
       .join("rect")
-         .attr("width", (width - 100) / 6)
+         .attr("width", barwidth)
          .attr("height", function(d) {return heightScale(d);})
          .attr("y", function(d) {return height - heightScale(d);})
-         .attr("x", function(d, i) {return i * ((width - 80) / 6) ;})
+         .attr("x", function(d, i) {return i * pairwidth ;})
          .attr("fill", "#33dd44aa");
 }
 
 function updateGraphic(tally, clear=false) {
    var width = "600"; 
    var height = "500"; 
+   var barwidth = 35;
+   var pairwidth = 100;
+   var betweenwidth = 10; 
+   
    var counts;
    var heightScale; 
    if (clear) {
@@ -73,7 +82,7 @@ function updateGraphic(tally, clear=false) {
    } else {
       counts = tally;
       heightScale = d3.scaleLinear()
-         .domain([0, d3.max(counts)])
+         .domain([0, d3.sum(counts)])
          .range([0, height - 20]); 
    }
    
@@ -82,9 +91,9 @@ function updateGraphic(tally, clear=false) {
       .join("rect")
          .transition()
          .duration(400)
-         .attr("width", (width - 100) / 6)
+         .attr("width", barwidth)
          .attr("height", function(d) {return heightScale(d);})
          .attr("y", function(d) {return height - heightScale(d);})
-         .attr("x", function(d, i) {return i * ((width - 80) / 6) ;})
+         .attr("x", function(d, i) {return i * pairwidth ;})
          .attr("fill", "#8844dd99");
 }

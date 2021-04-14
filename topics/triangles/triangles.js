@@ -70,7 +70,7 @@ function drawGlobe() {
   let map = svg.append("g")
 
   // Original, obsolete address : "https://raw.githubusercontent.com/michael-keith/mps_interests/master/view/js/charts/data/world_map.json"
-  d3.json("https://gist.github.com/ysyun/c4d89e821d303ed007c77f898d17c603#file-world_map-json").then(function(d) {
+  d3.json("https://room202math.github.io/figures/world_map.json").then(function(d) {
     map.append("g")
       .attr("class", "countries" )
       .selectAll("path")

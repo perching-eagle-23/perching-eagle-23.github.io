@@ -76,10 +76,15 @@
 
 .inline_figure {
   display: table;
-  float: right;
-  margin-left: 20px;
+  margin-top: 20px;
 }
 
+@media only screan and (min-width: 1000px) {
+  .inline_figure {
+    float: right;
+    margin-left: 20px;
+  }
+}
 .inline_figure__label {
   display: table-caption;
   caption-side: bottom;

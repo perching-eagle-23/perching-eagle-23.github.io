@@ -23,6 +23,8 @@ body {
   font-family: "Computer Modern Bright", sans-serif;
   font-size: 1.1em;
   padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
   margin: 0px;
 }
 
@@ -76,8 +78,6 @@ em {
   border-radius: 10px;
   padding: 23px;
   padding-top: 8px;
-  padding-left: 4px;
-  padding-right: 4px;
   /* text-align: justify; */
 }
 
@@ -85,8 +85,6 @@ em {
 @media only screen and (max-width: 1000px) {
   .midsection {
     width: 90%;
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
 .midsection > p {
@@ -96,7 +94,7 @@ em {
 /* Boxes for definitions and list items on list pages */
 .definition {
   color: #303633;
-  display: block;
+  /* display: block; */
   box-shadow: 0px 1px 2px 0px #F09D51;
   padding: 10px;
   border-radius: 5px;
@@ -263,10 +261,15 @@ ul.definition {
 
 .inline_figure {
   display: table;
-  float: right;
-  margin-left: 20px;
+  margin-top: 20px;
 }
 
+@media only screan and (min-width: 1000px) {
+  .inline_figure {
+    float: right;
+    margin-left: 20px;
+  }
+}
 .inline_figure__label {
   display: table-caption;
   caption-side: bottom;

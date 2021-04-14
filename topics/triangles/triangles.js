@@ -69,7 +69,8 @@ function drawGlobe() {
 
   let map = svg.append("g")
 
-  d3.json("https://raw.githubusercontent.com/michael-keith/mps_interests/master/view/js/charts/data/world_map.json").then(function(d) {
+  // Original, obsolete address : "https://raw.githubusercontent.com/michael-keith/mps_interests/master/view/js/charts/data/world_map.json"
+  d3.json("https://gist.github.com/markmarkoh/2969317").then(function(d) {
     map.append("g")
       .attr("class", "countries" )
       .selectAll("path")

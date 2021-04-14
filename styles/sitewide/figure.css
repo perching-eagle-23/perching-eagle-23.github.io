@@ -79,7 +79,7 @@
   margin-top: 20px;
 }
 
-@media only screan and (min-width: 1000px) {
+@media only screen and (min-width: 700px) {
   .inline_figure {
     float: right;
     margin-left: 20px;

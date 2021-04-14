@@ -83,7 +83,7 @@ em {
 
 .definition {
    color: variables.$text;    
-   /* display: block; */
+   display: block;
    box-shadow: 0px 1px 2px 0px variables.$definition_highlight;
    padding: 10px;
    border-radius: 5px; 

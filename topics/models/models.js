@@ -17,7 +17,9 @@ window.onload = function(){
       }
    }); 
    d3.select("#clear").on("click", function() {
-      updateGraphic('what', true); 
+      die.clear();
+      console.log(die.tally);
+      updateGraphic(die.tally); 
    }); 
 }
 
@@ -30,6 +32,10 @@ function Die() {
          this.tally[outcome] += 1;
       }
    }
+   
+   this.clear = function() {
+      this.tally = [0,0,0,0,0,0];
+   }
 }
 
 function drawGraphic() {
@@ -37,7 +43,7 @@ function drawGraphic() {
    var height = "500";
    var barwidth = 35;
    var pairwidth = 100;
-   var betweenwidth = 10; 
+   var betweenwidth = 5; 
    var afterwidth = 20; 
    
    
@@ -66,26 +72,19 @@ function drawGraphic() {
          .attr("fill", "#33dd44aa");
 }
 
-function updateGraphic(tally, clear=false) {
+function updateGraphic(tally) {
    var width = "600"; 
    var height = "500"; 
    var barwidth = 35;
    var pairwidth = 100;
-   var betweenwidth = 10; 
+   var betweenwidth = 5; 
    
-   var counts;
-   var heightScale; 
-   if (clear) {
-      counts = [0,0,0,0,0,0]; 
-      heightScale = d => 10;
-      console.log("clear");
-   } else {
-      counts = tally;
-      heightScale = d3.scaleLinear()
-         .domain([0, d3.sum(counts)])
-         .range([0, height - 20]); 
-   }
-   
+   var counts = tally;
+   var heightScale = d3.scaleLinear()
+      // If no rolls are tallied, make sure the domain is not {0} so that 0 values actually map to the bottom of the range
+      .domain([0, Math.max(d3.sum(counts), 0.1)])
+      .range([0, height - 20]); 
+
    d3.select(".actual").selectAll("rect")
       .data(counts)
       .join("rect")

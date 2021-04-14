@@ -33,19 +33,32 @@
       
       <p>In order to test how well a model describes something, we must make observations and/or measurements of that thing.  If the observations closely match what the model predicts, we say the model is a good model and give it a name, much like we would with a dog.</p>
       
-      <p>Let's start quantifying the efficacy of models in describing phenomena with the following case study.</p>
+      <p>Let's start quantifying the accuracy of models with the following case study.</p>
       
       <h2 class="subsection" id="sub1">Section 1: Is this die a fair die?</h2>
       <div id="sub1content">
          <p>In the gizmo below, the blue bars tally the number of rolls of each value, while the green bars are fixed at equal numbers of rolls.  Roll a few times, and ask: is this a fair die?  Then roll a thousand, then a million times, and ask again.  (Obviously the "die" here is a piece of code, which just changes the question to "did I write a fair die function"?)</p>
       
-         <div style="border:2px solid black;">
-            <svg id="die"></svg>
+         <div class="figure">
+            <h3 class="figure__title">Is this die a fair die?</h3>
+            <div class="figure__image" style="border:2px solid black;">
+               <div style="text-align:center;">
+                  <svg id="die" width="90%" height="90%" viewBox="0 0 900 500">
+                     <rect x=0 y=0 width=900 height=500 stroke="black" fill="none"></rect>
+                  
+                  </svg>
+               </div>
+            </div>
+            <div class="button_label8">
+               <button id="roll">Roll 1 time</button> 
+               <button>Roll 1000 times</button> 
+               <button>Roll 1000000 times</button>
+               <button id="clear">Clear</button>
+            </div>
+            <p class="figure__label"></p>
          </div>
-         <button id="roll">Roll 1 time</button> <button>Roll 1000 times</button> <button>Roll 1000000 times</button>
-         <button id="showsteps">show steps</button> <button id="clear">clear</button>
          
-         <p>After a million rolls, you were probably convinced the die was fair.  But hopefully your takeaway after just a few rolls was "I'm not sure, there is not enough data."  This is the crux of our study of statistics; the merit of our assessment of a model depends on how much quality data we collect.  This is why an anecdote is absolutely no grounds to, say, decide something about human nature.  One needs many, many data points to infer something about a large population.</p>
+         <p>After a million rolls, you were probably convinced the die was fair.  But hopefully your takeaway after just a few rolls was "I'm not sure, there is not enough data."  This is the crux of our study of statistics; the merit of our assessment of a model depends on how much quality data we collect.  This is why an anecdote is absolutely no grounds to, say, decide something about human nature.  One needs lots of data to safely infer something about a system.</p>
          
          <p>We'd like to measure how confident we are that the six sides of the die are equally likely - a model of the behavior of the die - which leads to the requirement of studying a little probability before statistics.  To measure our confidence in the hypothesis requires us to ask:</p>
          

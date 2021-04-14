@@ -51,16 +51,22 @@ function drawGraphic() {
    var heightScale = d3.scaleLinear()
       .domain([0, 1])
       .range([0, height - 20]); 
+   var axis = d3.axisLeft(heightScale).ticks(8);
    
-   var svg = d3.select("svg#die")
-      .attr("width", width + "px")
-      .attr("height", height + "px");
+   var svg = d3.select("svg#die");
+   
+   // The reference uniform distribution
    svg.append('g')
-      .attr("transform", "translate(100,10)")
+      .attr("transform", "translate(100, -20)")
       .classed("uniform", true);
+   // The moving bars
    svg.append('g')
-      .attr("transform", "translate(" + (100 + barwidth + betweenwidth) + ",10)")
+      .attr("transform", "translate(" + (100 + barwidth + betweenwidth) + ", -20)")
       .classed("actual", true);
+   svg.append('g')
+      .attr("transform", "translate(50)")
+      .call(axis);
+    
    
    d3.select(".uniform").selectAll("rect")
       .data(counts)

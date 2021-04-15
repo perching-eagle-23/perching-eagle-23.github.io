@@ -9,16 +9,8 @@ window.onload = function(){
       die.roll(parseInt(this.innerText.replace(/\D/g,'')));
       updateGraphic(die.tally);
    }); 
-   d3.select("#showsteps").on("click", function() {
-      for (let i = 0; i < 10; i++) {
-         die.roll(); 
-         console.log(die.tally);
-         updateGraphic(die.tally); 
-      }
-   }); 
    d3.select("#clear").on("click", function() {
       die.clear();
-      console.log(die.tally);
       updateGraphic(die.tally); 
    }); 
 }
@@ -39,8 +31,8 @@ function Die() {
 }
 
 function drawGraphic() {
-   var width = "900"; 
-   var height = "500";
+   var width = 900; 
+   var height = 500;
    var barwidth = 35;
    var pairwidth = 100;
    var betweenwidth = 5; 
@@ -51,9 +43,13 @@ function drawGraphic() {
    var heightScale = d3.scaleLinear()
       .domain([0, 1])
       .range([0, height - 20]); 
-   var axis = d3.axisLeft(heightScale).ticks(8);
+   var axis = d3.axisLeft(heightScale)
+      .tickValues([0, 1/6, 2/6, 3/6, 4/6, 5/6, 1]);
    
-   var svg = d3.select("svg#die");
+   var svg = d3.select("svg#die")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("viewBox", [0, 0, width, height]);
    
    // The reference uniform distribution
    svg.append('g')
@@ -64,7 +60,7 @@ function drawGraphic() {
       .attr("transform", "translate(" + (100 + barwidth + betweenwidth) + ", -20)")
       .classed("actual", true);
    svg.append('g')
-      .attr("transform", "translate(50)")
+      .attr("transform", "translate(60)")
       .call(axis);
     
    

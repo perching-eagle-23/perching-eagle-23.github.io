@@ -2,8 +2,15 @@ window.onload = function(){
    // nav panel functions
    attachNavHandlers();
    
-   let die = new Die();
+   var width = 900; 
+   var height = 500;
+   var barwidth = 35;
+   var pairwidth = 100;
+   var betweenwidth = 5; 
    drawGraphic();
+   
+   let die = new Die();
+   
    d3.selectAll("button").on("click", function() {
       // isolate number part from the pressed button's text, pass to the roll function
       die.roll(parseInt(this.innerText.replace(/\D/g,'')));
@@ -31,14 +38,7 @@ function Die() {
 }
 
 function drawGraphic() {
-   var width = 900; 
-   var height = 500;
-   var barwidth = 35;
-   var pairwidth = 100;
-   var betweenwidth = 5; 
-   var afterwidth = 20; 
-   
-   
+
    var counts = [1/6, 1/6, 1/6, 1/6, 1/6, 1/6]; 
    var heightScale = d3.scaleLinear()
       .domain([0, 1])
@@ -59,9 +59,11 @@ function drawGraphic() {
    svg.append('g')
       .attr("transform", "translate(" + (100 + barwidth + betweenwidth) + ", -20)")
       .classed("actual", true);
+   // The vertical axis
    svg.append('g')
       .attr("transform", "translate(60)")
       .call(axis);
+   // The horizontal axis
     
    
    d3.select(".uniform").selectAll("rect")
@@ -75,12 +77,7 @@ function drawGraphic() {
 }
 
 function updateGraphic(tally) {
-   var width = "600"; 
-   var height = "500"; 
-   var barwidth = 35;
-   var pairwidth = 100;
-   var betweenwidth = 5; 
-   
+
    var counts = tally;
    var heightScale = d3.scaleLinear()
       // If no rolls are tallied, make sure the domain is not {0} so that 0 values actually map to the bottom of the range

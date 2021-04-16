@@ -58,7 +58,7 @@
             <p class="figure__label"></p>
          </div>
          
-         <p>After a million rolls, you were probably convinced the die was fair.  But hopefully your takeaway after just a few rolls was "I'm not sure, there is not enough data."  This is the crux of our study of statistics; the merit of our assessment of a model depends on how much quality data we collect.  This is why an anecdote is absolutely no grounds to, say, decide something about human nature.  One needs lots of data to safely infer something about a system.</p>
+         <p>After a million rolls, you were probably convinced the die was fair.  But hopefully your takeaway after just a few rolls was "I'm not sure, there is not enough data."  This is the crux of our study of statistics: <em>the merit of our assessment of a model depends on how much quality data we collect</em>.  This is why an anecdote is absolutely no grounds to, say, decide something about human nature.  One needs lots of data to safely infer something about a system.</p>
          
          <p>We'd like to measure how confident we are that the six sides of the die are equally likely - a model of the behavior of the die - which leads to the requirement of studying a little probability before statistics.  To measure our confidence in that hypothesis (proposed model) requires us to ask:</p>
          

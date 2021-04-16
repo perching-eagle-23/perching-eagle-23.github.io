@@ -27,8 +27,10 @@
       
       <p>These are examples of models, in particular bad ones.</p>
       
-     <div class="definition"> <p>Mathematical model \( := \) A toy system which is posited to describe the behavior of some other system or phenomenon.</p>
-         </div>
+     <div style="overflow: hidden;"> 
+      <p class="definition">Mathematical model \( := \) A toy system which is posited to describe the behavior of some other system or phenomenon.</p>
+     </div>
+         
       <p>I use "toy" not to belittle the importance of models but because they are ... things ... with behavior and state, little worlds of their own: toys, systems, mechanisms.  They do not necessarily have much to do with reality besides being concieved within it.  The rules of chess and the names of pieces are a model of chess play; the fact that someone could pick up a physical piece and eat it does not obey this model.  A whole lot of poor reasoning is due to our conflating models with the things they model.</p>
       
       <p>In order to test how well a model describes something, we must make observations and/or measurements of that thing.  If the observations closely match what the model predicts, we say the model is a good model and give it a name, much like we would with a dog.</p>
@@ -37,16 +39,13 @@
       
       <h2 class="subsection" id="sub1">Section 1: Is this die a fair die?</h2>
       <div id="sub1content">
-         <p>In the gizmo below, the blue bars tally the number of rolls of each value, while the green bars are fixed at equal numbers of rolls.  Roll a few times, and ask: is this a fair die?  Then roll a thousand, then a million times, and ask again.  (Obviously the "die" here is a piece of code, which just changes the question to "did I write a fair die function"?)</p>
+         <p>In the gizmo below, roll a few times and ask: is this a fair die?  Then roll a thousand, then a million times, and ask again.  (Obviously the "die" here is a piece of code, which just changes the question to "did I write a fair die function"?)</p>
       
          <div class="figure">
             <h3 class="figure__title">Die behavior modelled with a uniform distribution</h3>
-            <div class="figure__image" style="border:2px solid black;">
+            <div class="figure__image">
                <div style="text-align:center;">
-                  <svg id="die" viewBox="0 0 900 500">
-                     <rect x=0 y=0 width=900 height=500 stroke="black" fill="none"></rect>
-                  
-                  </svg>
+                  <svg id="die" viewBox="0 0 900 500"></svg>
                </div>
             </div>
             <div class="button_label8">
@@ -55,7 +54,7 @@
                <button>Roll 1000000 times</button>
                <button id="clear">Clear</button>
             </div>
-            <p class="figure__label"></p>
+            <p class="figure__label">The purple bars tally the number of rolls of each value, while the green bars are fixed at equal numbers of rolls.  This is called a uniform distribution, since the likelihood of each outcome is the same.</p>
          </div>
          
          <p>After a million rolls, you were probably convinced the die was fair.  But hopefully your takeaway after just a few rolls was "I'm not sure, there is not enough data."  This is the crux of our study of statistics: <em>the merit of our assessment of a model depends on how much quality data we collect</em>.  This is why an anecdote is absolutely no grounds to, say, decide something about human nature.  One needs lots of data to safely infer something about a system.</p>
@@ -66,7 +65,7 @@
             <p>Given that the hypothesis is true, how likely is it that the given data would be observed?</p>
          </div>
          
-         <p>This motivates our study probability, which is the quantification of "likelihood". </p>
+         <p>This motivates our study probability beginning in the next section.</p>
       </div>     
    </div>
 </body>

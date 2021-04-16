@@ -1,21 +1,24 @@
-   
+ 
 <!doctype html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Topics</title>
+   <title>Topics / Modelling</title>
    <link href="https://room202math.github.io/styles/all.css" rel="stylesheet" type="text/css" />
    <!-- Load d3.js.  Even if there are no shiny d3 gizmos in a page, other scripts use d3 for concise element selection. -->
    <script src='https://d3js.org/d3.v6.js'></script>
    <!-- Navbar functionality -->
    <script defer src="https://room202math.github.io/styles/nav.js" type="text/javascript"></script>
-   </head>
+   <!-- MathJax --> 
+         <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>
+         <script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
+         <script defer src='http://localhost/learn/room202/persistence/topics/models/models.js' type='text/javascript'></script></head>
 <body>
    <div class="header">
       <div class="header__navicon"></div>
       <h1 class="pagetitle">
          <a href="https://room202math.github.io/">
-            Topics         </a>
+            Topics / Modelling         </a>
       </h1>
    </div>
    
@@ -27,27 +30,64 @@
       <a href="https://room202math.github.io/resources">Resources</a>
    </nav>
    
-   <div class="mainwrapper">
-      <div class="subwrapper">
-                        <div class="definition listitem">
-                  <h2>
-                     <a href="./symmetry">Applications of Symmetry</a>
-                  </h2>
-                  <p>Symmetry is an ubiquitous topic in mathematics.  It underlies many physical phenomena, and when symmetry is recognized in a problem, it often provides a much shorter way of solving the problem.</p>
+   <div class="midsection">
+      <h1>Mathematical Modelling</h1>
+      <p>The Greek philosopher Zeno posed the following argument in the 5th century BC.  An arrow shot at a target must travel half the distance, then half the remaining distance, then half of the distance remaining after that, and so on.  Since (according to this argument) there is always another half distance to go, how can the arrow ever reach the target?  
+      </p>
+      
+      <div class="center_quote">\( \begin{eqnarray*} \sum_{i=1}^\infty \frac{1}{2^i} = \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + ... = ? \end{eqnarray*} \)</div>
+      
+      <div class="inline_figure">
+         <img src="../../figures/images/jan_baptist.jpg" alt="Jan Baptist Van Helmont waiting for scorpions to materialize" width="300px">
+         <p class="figure__label inline_figure__label">Major doofus Jan Baptist Van Helmont</p>
+      </div>
+      
+      <p>
+      It was once believed that small organisms formed spontaneously from nonliving stuff, ie fleas from dust.  This was called "spontaneous generation".  Jan Baptist van Helmont (1500's) helpfully determined that basil left between bricks in the sun would turn into scorpions. 
+      </p>
+      
+      <p>These are examples of models, in particular bad ones.</p>
+      
+     <div style="overflow: hidden;"> 
+      <p class="definition">Mathematical model \( := \) A toy system which is posited to describe the behavior of some other system or phenomenon.</p>
+     </div>
+         
+      <p>I use "toy" not to belittle the importance of models but because they are ... things ... with behavior and state, little worlds of their own: toys, systems, mechanisms.  They do not necessarily have much to do with reality besides being concieved within it.  The rules of chess and the names of pieces are a model of chess play; the fact that someone could pick up a physical piece and eat it does not obey this model.  A whole lot of poor reasoning is due to our conflating models with the things they model.</p>
+      
+      <p>In order to test how well a model describes something, we must make observations and/or measurements of that thing.  If the observations closely match what the model predicts, we say the model is a good model and give it a name, much like we would with a dog.</p>
+      
+      <p>Let's start quantifying the accuracy of models with the following case study.</p>
+      
+      <h2 class="subsection" id="sub1">Section 1: Is this die a fair die?</h2>
+      <div id="sub1content">
+         <p>In the gizmo below, roll a few times and ask: is this a fair die?  Then roll a thousand, then a million times, and ask again.  (Obviously the "die" here is a piece of code, which just changes the question to "did I write a fair die function"?)</p>
+      
+         <div class="figure">
+            <h3 class="figure__title">Die behavior modelled with a uniform distribution</h3>
+            <div class="figure__image">
+               <div style="text-align:center;">
+                  <svg id="die" viewBox="0 0 900 500"></svg>
                </div>
-                              <div class="definition listitem">
-                  <h2>
-                     <a href="./triangles">Why Triangles?</a>
-                  </h2>
-                  <p>The motivation for studying the geometry of triangles and the behavior of trigonometric functions.</p>
-               </div>
-                              <div class="definition listitem">
-                  <h2>
-                     <a href="./models">Mathematical Modelling</a>
-                  </h2>
-                  <p>How well do our graphs, equations, and computer programs describe the universe?  There's math for that too.</p>
-               </div>
-                     </div>
+            </div>
+            <div class="button_label8">
+               <button id="roll">Roll 1 time</button> 
+               <button>Roll 1000 times</button> 
+               <button>Roll 1000000 times</button>
+               <button id="clear">Clear</button>
+            </div>
+            <p class="figure__label">The purple bars tally the number of rolls of each value, while the green bars are fixed at equal numbers of rolls.  This is called a uniform distribution, since the likelihood of each outcome is the same.</p>
+         </div>
+         
+         <p>After a million rolls, you were probably convinced the die was fair.  But hopefully your takeaway after just a few rolls was "I'm not sure, there is not enough data."  This is the crux of our study of statistics: <em>the merit of our assessment of a model depends on how much quality data we collect</em>.  This is why an anecdote is absolutely no grounds to, say, decide something about human nature.  One needs lots of data to safely infer something about a system.</p>
+         
+         <p>We'd like to measure how confident we are that the six sides of the die are equally likely - a model of the behavior of the die - which leads to the requirement of studying a little probability before statistics.  To measure our confidence in that hypothesis (proposed model) requires us to ask:</p>
+         
+         <div class="center_quote">
+            <p>Given that the hypothesis is true, how likely is it that the given data would be observed?</p>
+         </div>
+         
+         <p>This motivates our study probability beginning in the next section.</p>
+      </div>     
    </div>
 </body>
 </html>

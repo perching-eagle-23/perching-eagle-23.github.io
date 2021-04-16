@@ -1,7 +1,7 @@
  <?php 
       $root = "https://room202math.github.io/";
       $dev_root = "http://localhost/learn/room202/persistence/";
-      $pagetitle = 'Topics / Symmetry'; 
+      $pagetitle = 'Topics / Modelling'; 
       $pagescripts = "<!-- MathJax --> 
          <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>
          <script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>

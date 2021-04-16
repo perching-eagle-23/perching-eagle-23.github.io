@@ -16,6 +16,11 @@
                      "./triangles",
                      'Why Triangles?',
                      'The motivation for studying the geometry of triangles and the behavior of trigonometric functions.'
+                  ],
+                  [
+                     "./models",
+                     'Mathematical Modelling', 
+                     'How well do our graphs, equations, and computer programs describe the universe?  There\'s math for that too.'
                   ]];
                   // [
                      // "./logic",

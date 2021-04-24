@@ -87,18 +87,26 @@
          
          <p class="definition">For each outcome \( \{o_1, o_2, ..., o_n\}  \) of \( S \), assign a nonnegative number \( \{x_1, x_2, ... , x_n \} \) as the probability of that outcome, with the property that the sum of x's = 1.  For any event of S, the probability is given by the sum of the probabilities of the outcomes in that event.</p>
          
-         Example 1: Consider the experiment of drawing a single card from a standard 52 card deck. 
-         What are the odds of selecting a card that is black (spade or club):
+         <p>This reduces the calculation of many probabilities to a matter of counting the number of elements in events.</p>
+         
+         <p>Example 1: Consider the experiment of drawing a single card from a standard 52 card deck. Let aces have number value 1.
+            What are the odds of selecting a card that is black (spade or club):</p>
          
          <ol>
             <li>and odd numbered? </li>
-            <li>or royal? </li>
+            <li>or a heart? </li>
             <li>and either greater than 2 or a spade? </li>
          </ol>
          
-         <p>1)	Let event A = a black card is drawn, and event B = an odd numbered card is drawn.  Hence we are interested in finding the odds of the intersection of these events.  We assign equal probabilities to every card, hence we need only count the number of cards in this intersection and divide it by 52.</p>
+         <p>1)	Let event A = a black card is drawn, and event B = an odd numbered card is drawn.  Hence we are interested in finding the odds of the intersection of these events.  We assign equal probability \( \frac{1}{52} \) to every card, hence we need only count the number of cards in this intersection and divide it by 52.</p>
          
-         <p class="center_quote">(52 / 2) * (1 / 2) * (</p>
+         <p class="center_quote">\( P(A \cap B) = (26) \) [spades and clubs] \( * (\frac{7}{13} )\) [of these are odd] \( * ( \frac{1}{52} ) \) [the odds of a particular card] \( = \frac{14}{52} = \frac{7}{26} \)</p>
+         
+         <p>2) Let event C = a heart is drawn. Events A and C are disjoint, that is, they have no elements in common.  Hence axiom three tells us that the odds of their union is the sum of their odds.</p> 
+         
+         <p class="center_quote">\( P(A \cup C) = ( \frac{26}{52} ) \) [the odds of spades or clubs] \( + ( \frac{13}{56} ) \)  [the odds of hearts] \( = \frac{3}{4} \)</p>
+         
+         <p>3) Let event </p>
          
          
          Example 2: Consider an experiment of selecting two word phrases of the form (adjective, noun) from these lists: 

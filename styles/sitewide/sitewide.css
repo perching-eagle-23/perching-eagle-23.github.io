@@ -91,15 +91,23 @@ em {
   line-height: 1.3em;
 }
 
-/* Boxes for definitions and list items on list pages */
-.definition {
+/* highlighted boxes for definitions, comprehension questions, and examples */
+.definition, .compQ, .example {
   color: #303633;
-  /* display: block; */
+  display: block;
   box-shadow: 0px 1px 2px 0px #F09D51;
   padding: 10px;
   border-radius: 5px;
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.compQ {
+  box-shadow: 0px 1px 2px 0px #F8F4E3;
+}
+
+.example {
+  box-shadow: 0px 1px 2px 0px #303633;
 }
 
 p.definition {

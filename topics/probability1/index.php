@@ -4,8 +4,7 @@
       $pagetitle = 'Topics / Probability Part 1'; 
       $pagescripts = "<!-- MathJax --> 
          <script async src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>
-         <script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>
-         <script defer src='" . $dev_root . "topics/models/models.js' type='text/javascript'></script>"; 
+         <script async id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script>"; 
       include("../../templates/head.php"); 
    ?>
    

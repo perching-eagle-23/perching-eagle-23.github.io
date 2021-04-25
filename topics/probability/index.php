@@ -76,7 +76,23 @@
          
          Here are some useful identities for the probabilities of two events.  They are all derivable from the Kolmogorov Axioms.
          
-         ** defns **
+         <div class="definition">Probability Function Theorem 1: <br />
+            For \( P \) a prob. func. and \( A \) an event in \( \mathbb{B} \) : 
+            <ol>
+               <li>\( P( \emptyset ) = 0 \)</li>
+               <li>\( P(A) \leq 1 \)</li>
+               <li>\( P(A^C) = 1 - P(A) \)</li>
+            </ol>
+         </div>
+         
+         <div class="definition">Probability Function Theorem 2: <br />
+            For \( P \) a prob. func. and \( A, B \) events in \( \mathbb{B} \) : 
+            <ol>
+               <li>\( P(B \cap A^C) = P(B) - P(A \cap B) \)</li>
+               <li>\( P(A \cup B) = P(A) + P(B) - P(A \cap B) \)</li>
+               <li>If \( A \subset B \), then \( P(A) \leq P(B) \)</li>
+            </ol>
+         </div>
       </div>
       
       <h2 class="subsection" id="sub3">Assigning and Calculating Probabilities</h2>
@@ -106,16 +122,31 @@
          
          <p class="center_quote">\( P(A \cup C) = ( \frac{26}{52} ) \) [the odds of spades or clubs] \( + ( \frac{13}{56} ) \)  [the odds of hearts] \( = \frac{3}{4} \)</p>
          
-         <p>3) Let event </p>
+         <p>3) We can simplify this event with an identity from set theory.</p>
          
+         <p class="center_quote">\( (P \cup Q) \cap (R \cup P) = P \cup (Q \cap R) \)</p>
          
-         Example 2: Consider an experiment of selecting two word phrases of the form (adjective, noun) from these lists: 
-          (“greedy”, “useless”, “haughty”, “forceful”)
-         (“hat”, “tirade”, “fish”) 
-         For example, “greedy fish” is one outcome. 
-         1.	How many elements are in the sample space? 
-         2.	If the outcomes are equally likely, calculate the probability the outcome will make someone chuckle.  (For each of the n outcomes, decide whether the outcome will make someone chuckle; count the elements in this event; then find the odds of this event).
-         3.	Let B = The event that the outcome includes “fish”.  What are the odds someone will chuckle, given that B occurs?
+         <p>We now make use of Probability Function Theorem 2.2</p>
+         
+         <p class="center_quote" style="text-align: justify; padding-left: 10px; ">\(P( \) spades \( ) = \frac{13}{56} = \frac{1}{4} \) [no. spades divided by total cards] <br />
+         \( P( \) club and greater than 2 \( ) = \frac{11}{56} \) <br />
+         \(P( \) spades and \( ( \) club and greater than 2 \( )) = 0 \) <br /> [since no card is both a spade and a club.  We see that the theorem 2.2 reduces to K. axiom 3, since the events in the union are disjoint.  Hence: ] <br />
+         \( P( \) spades or \( ( \) club and greater than 2 \( )) = P( \) spades \( ) + P( \) club and greater than 2 \( ) = \frac{11 + 13}{56} = \frac{24}{56} = \frac{3}{7} \)
+         </p>
+         
+         <div>
+            <p>Consider an experiment of selecting two word phrases of the form (adjective, noun) from these lists: <br />
+                (“greedy”, “useless”, “haughty”, “forceful”) <br />
+               (“hat”, “tirade”, “fish”) <br />
+               For example, “greedy fish” is one outcome. 
+            </p>
+            
+            <ol>
+               <li>How many elements are in the sample space? </li>
+               <li>If the outcomes are equally likely, calculate the probability the outcome will make someone chuckle.  (For each of the n outcomes, decide whether the outcome will make someone chuckle; count the elements in this event; then find the odds of this event).</li>
+               <li>Let B = The event that the outcome includes “fish”.  What are the odds someone will chuckle, given that B occurs?</li>
+            </ol>
+         </div>
       </div>
    </div>
 </body>

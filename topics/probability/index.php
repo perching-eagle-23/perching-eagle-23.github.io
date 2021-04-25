@@ -32,22 +32,24 @@
          
          <p class="definition">Event \( := \) A subset of S, \(A \subset S\).  If the outcome is in A, event A has occurred.  Hence we can assign odds to collections of outcomes consistent with our assignment of odds to individual outcomes.</p>
          
-         Comprehension Q’s: 
-         <ol> 
-            <li>Define a reasonable sample space for the following experiments: </li>
-            <ol>
-               <li>Rolling two dice</li>
-               <li>Measuring stellar masses</li>
-               <li>Recording someone’s purchases and sales in a market</li>
+         <div class="compQ">
+            <h3>Comprehension Q's</h3>
+            <ol> 
+               <li>Define a reasonable sample space for the following experiments: </li>
+               <ol>
+                  <li>Rolling two dice</li>
+                  <li>Measuring stellar masses</li>
+                  <li>Recording someone’s purchases and sales in a market</li>
+               </ol>
+               <li>For the sample space S = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, describe the following events using set theory and English: </li>
+               <ol>
+                  <li>Event A = An odd number occurs</li>
+                  <li>Event B = A number greater than 3 occurs</li>
+                  <li>Events A and B occur</li>
+                  <li>Events A and not(B) occur</li>
+               </ol>
             </ol>
-            <li>For the sample space S = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, describe the following events using set theory and English: </li>
-            <ol>
-               <li>Event A = An odd number occurs</li>
-               <li>Event B = A number greater than 3 occurs</li>
-               <li>Events A and B occur</li>
-               <li>Events A and not(B) occur</li>
-            </ol>
-         </ol>
+         </div>
       </div>
 
       <h2 class="subsection" id="sub2">Probability Functions</h2>
@@ -105,36 +107,41 @@
          
          <p>This reduces the calculation of many probabilities to a matter of counting the number of elements in events.</p>
          
-         <p>Example 1: Consider the experiment of drawing a single card from a standard 52 card deck. Let aces have number value 1.
-            What are the odds of selecting a card that is black (spade or club):</p>
+         <div class="example">
+            <h3>Example 1:</h3>
          
-         <ol>
-            <li>and odd numbered? </li>
-            <li>or a heart? </li>
-            <li>and either greater than 2 or a spade? </li>
-         </ol>
+            <p>Consider the experiment of drawing a single card from a standard 52 card deck. Let aces have number value 1.
+               What are the odds of selecting a card that is black (spade or club):</p>
+            
+            <ol>
+               <li>and odd numbered? </li>
+               <li>or a heart? </li>
+               <li>and either greater than 2 or a spade? </li>
+            </ol>
+            
+            <p>1)	Let event A = a black card is drawn, and event B = an odd numbered card is drawn.  Hence we are interested in finding the odds of the intersection of these events.  We assign equal probability \( \frac{1}{52} \) to every card, hence we need only count the number of cards in this intersection and divide it by 52.</p>
+            
+            <p class="center_quote">\( P(A \cap B) = (26) \) [spades and clubs] \( * (\frac{7}{13} )\) [of these are odd] \( * ( \frac{1}{52} ) \) [the odds of a particular card] \( = \frac{14}{52} = \frac{7}{26} \)</p>
+            
+            <p>2) Let event C = a heart is drawn. Events A and C are disjoint, that is, they have no elements in common.  Hence axiom three tells us that the odds of their union is the sum of their odds.</p> 
+            
+            <p class="center_quote">\( P(A \cup C) = ( \frac{26}{52} ) \) [the odds of spades or clubs] \( + ( \frac{13}{56} ) \)  [the odds of hearts] \( = \frac{3}{4} \)</p>
+            
+            <p>3) We can simplify this event with an identity from set theory.</p>
+            
+            <p class="center_quote">\( (P \cup Q) \cap (R \cup P) = P \cup (Q \cap R) \)</p>
+            
+            <p>We now make use of Probability Function Theorem 2.2</p>
+            
+            <p class="center_quote" style="text-align: justify; padding-left: 10px; ">\(P( \) spades \( ) = \frac{13}{56} = \frac{1}{4} \) [no. spades divided by total cards] <br />
+            \( P( \) club and greater than 2 \( ) = \frac{11}{56} \) <br />
+            \(P( \) spades and \( ( \) club and greater than 2 \( )) = 0 \) <br /> [since no card is both a spade and a club.  We see that the theorem 2.2 reduces to K. axiom 3, since the events in the union are disjoint.  Hence: ] <br />
+            \( P( \) spades or \( ( \) club and greater than 2 \( )) = P( \) spades \( ) + P( \) club and greater than 2 \( ) = \frac{11 + 13}{56} = \frac{24}{56} = \frac{3}{7} \)
+            </p>
+         </div>
          
-         <p>1)	Let event A = a black card is drawn, and event B = an odd numbered card is drawn.  Hence we are interested in finding the odds of the intersection of these events.  We assign equal probability \( \frac{1}{52} \) to every card, hence we need only count the number of cards in this intersection and divide it by 52.</p>
-         
-         <p class="center_quote">\( P(A \cap B) = (26) \) [spades and clubs] \( * (\frac{7}{13} )\) [of these are odd] \( * ( \frac{1}{52} ) \) [the odds of a particular card] \( = \frac{14}{52} = \frac{7}{26} \)</p>
-         
-         <p>2) Let event C = a heart is drawn. Events A and C are disjoint, that is, they have no elements in common.  Hence axiom three tells us that the odds of their union is the sum of their odds.</p> 
-         
-         <p class="center_quote">\( P(A \cup C) = ( \frac{26}{52} ) \) [the odds of spades or clubs] \( + ( \frac{13}{56} ) \)  [the odds of hearts] \( = \frac{3}{4} \)</p>
-         
-         <p>3) We can simplify this event with an identity from set theory.</p>
-         
-         <p class="center_quote">\( (P \cup Q) \cap (R \cup P) = P \cup (Q \cap R) \)</p>
-         
-         <p>We now make use of Probability Function Theorem 2.2</p>
-         
-         <p class="center_quote" style="text-align: justify; padding-left: 10px; ">\(P( \) spades \( ) = \frac{13}{56} = \frac{1}{4} \) [no. spades divided by total cards] <br />
-         \( P( \) club and greater than 2 \( ) = \frac{11}{56} \) <br />
-         \(P( \) spades and \( ( \) club and greater than 2 \( )) = 0 \) <br /> [since no card is both a spade and a club.  We see that the theorem 2.2 reduces to K. axiom 3, since the events in the union are disjoint.  Hence: ] <br />
-         \( P( \) spades or \( ( \) club and greater than 2 \( )) = P( \) spades \( ) + P( \) club and greater than 2 \( ) = \frac{11 + 13}{56} = \frac{24}{56} = \frac{3}{7} \)
-         </p>
-         
-         <div>
+         <div class="compQ">
+            <h3>Comprehension Q's</h3>
             <p>Consider an experiment of selecting two word phrases of the form (adjective, noun) from these lists: <br />
                 (“greedy”, “useless”, “haughty”, “forceful”) <br />
                (“hat”, “tirade”, “fish”) <br />

@@ -13,14 +13,19 @@
                      'Symmetry is an ubiquitous topic in mathematics.  It underlies many physical phenomena, and when symmetry is recognized in a problem, it often provides a much shorter way of solving the problem.'
                   ],
                   [
-                     "./triangles",
-                     'Why Triangles?',
-                     'The motivation for studying the geometry of triangles and the behavior of trigonometric functions.'
-                  ],
-                  [
                      "./models",
                      'Mathematical Modelling', 
                      'How well do our graphs, equations, and computer programs describe the universe?  There\'s math for that too.'
+                  ],
+                  [
+                     "./probability1",
+                     'Probability Part 1',
+                     'With practice of probability comes great power.'
+                  ],
+                  [
+                     "./triangles",
+                     'Why Triangles?',
+                     'The motivation for studying the geometry of triangles and the behavior of trigonometric functions.'
                   ]];
                   // [
                      // "./logic",

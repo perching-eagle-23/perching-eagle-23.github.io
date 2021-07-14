@@ -1,6 +1,5 @@
 let canvas;
 let canvasContext;
-
 let x = 0, y = 0;
 
 window.onload = function () {
@@ -9,6 +8,8 @@ window.onload = function () {
 
     canvas = document.getElementById("canvas");
     canvasContext = canvas.getContext('2d');
+
+    canvas.height = canvas.width = canvas.parentNode.clientWidth; 
 
     canvasContext.fillStyle = "black";
     canvasContext.fillRect(0, 0, canvas.width, canvas.height);

@@ -23,7 +23,6 @@ window.onload = function () {
 };
 
 function update() {
-
     let nextX, nextY;
     let r = Math.random();
     if (r < 0.01) {
@@ -50,6 +49,7 @@ function update() {
     y = nextY;
 
 }
+
 const drawFilledCircle = (centerX, centerY, radius, color) => {
     canvasContext.beginPath();
     canvasContext.fillStyle = color;
@@ -58,4 +58,4 @@ const drawFilledCircle = (centerX, centerY, radius, color) => {
 };
 
 // Save time with most common DOM get
-function byId(id) { return document.getElementById(id); }3
+function byId(id) { return document.getElementById(id); }
